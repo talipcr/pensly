@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Pensly — jetons de design, repris à l'identique de l'application.
+   Les noms historiques (--paper, --ink, --green-*) sont conservés pour que
+   toutes les pages partagent le même système ; les valeurs sont celles de l'app.
+   ========================================================================== */
+
+:root {
+  /* Surfaces */
+  --paper: #ffffff;         /* bg / surface */
+  --paper-raised: #ffffff;  /* cartes, sur bordure */
+  --paper-sunk: #f4f4f5;    /* surface-2 : sections alternées */
+  --paper-side: #f9f9fa;    /* sidebar-bg : fonds secondaires */
+
+  /* Texte */
+  --ink: #18181b;           /* text-primary   — 17,7:1 sur blanc */
+  --ink-2: #3f3f46;         /* text-secondary — 10,4:1 */
+  --ink-muted: #52525b;     /* text-muted     —  7,7:1 */
+
+  /* Accent unique — vert */
+  --green-ink: #1f7a48;     /* accent, liens — 5,3:1 sur blanc */
+  --green-icon: #1f7a48;    /* icônes */
+  --green-solid: #15803d;   /* accent-strong : CTA, texte blanc — 5,0:1 */
+  --green-hover: #146c34;   /* accent-strong-hover */
+  --green-tint: #f0f9f3;    /* accent-tint */
+  --green-light: #dcf1e3;   /* accent-light : pastilles */
+  --on-green: #ffffff;
+  --selection: #cbe8d5;
+  --focus-ring: #15803d;
+  --pin: #b45309;           /* touche chaude : un seul détail sur la page */
+
+  /* Filets */
+  --rule: #e8e8eb;          /* border */
+  --rule-subtle: #f0f0f2;   /* border-subtle */
+  --rule-strong: #d4d4d8;   /* zinc-300 : contours de boutons secondaires */
+
+  /* Ombres */
+  --shade-1: 0 1px 2px 0 rgb(24 24 27 / 0.05);
+  --shade-2: 0 12px 32px -8px rgb(24 24 27 / 0.18), 0 2px 6px -2px rgb(24 24 27 / 0.08);
+  --shade-3: var(--shade-2);
+
+  /* Typographie */
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+  /* Échelle fluide — H1 2,25rem mobile → 3,5rem desktop */
+  --step-000: 0.6875rem;                                       /* 11px — labels */
+  --step-00: clamp(0.875rem, 0.85rem + 0.10vw, 0.9375rem);
+  --step-0: clamp(1rem, 0.96rem + 0.20vw, 1.125rem);
+  --step-1: clamp(1.125rem, 1.07rem + 0.28vw, 1.3125rem);
+  --step-2: clamp(1.3125rem, 1.20rem + 0.55vw, 1.625rem);
+  --step-3: clamp(1.5rem, 1.30rem + 1.00vw, 2.125rem);
+  --step-4: clamp(1.75rem, 1.45rem + 1.60vw, 2.625rem);
+  --step-5: clamp(2.25rem, 1.60rem + 2.80vw, 3.5rem);
+
+  /* Rythme */
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --measure: 36rem;
+  --radius-sm: 6px;
+  --radius: 8px;
+  --radius-lg: 12px;
+
+  /* Mouvement */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur: 150ms;
+
+  color-scheme: light;
+}
+
+/* --------------------------------------------------------------------------
+   Sombre. Le vert des liens passe à accent-ink (#8ecca4) : #4fae74 n'atteint
+   que 4,3:1 sur #36373d, suffisant pour une icône (3:1), pas pour du texte.
+   -------------------------------------------------------------------------- */
+
+.dark {
+  --paper: #36373d;
+  --paper-raised: #3f4047;
+  --paper-sunk: #303137;
+  --paper-side: #303137;
+
+  --ink: #f4f4f6;
+  --ink-2: #e0e0e5;
+  --ink-muted: #bdbdc6;
+
+  --green-ink: #8ecca4;     /* accent-ink — 6,4:1 sur #36373d, 5,6:1 sur #3f4047 */
+  --green-icon: #4fae74;
+  --green-solid: #15803d;
+  --green-hover: #1a6f3a;
+  --green-tint: #334539;
+  --green-light: #334539;
+  --on-green: #ffffff;
+  --selection: #44674f;
+  --focus-ring: #6ec48d;
+  --pin: #fbbf24;
+
+  --rule: #4a4b53;
+  --rule-subtle: #3f4047;
+  --rule-strong: #5a5b64;
+
+  --shade-1: 0 1px 2px 0 rgb(0 0 0 / 0.25);
+  --shade-2: 0 12px 32px -8px rgb(0 0 0 / 0.45), 0 2px 6px -2px rgb(0 0 0 / 0.3);
+
+  color-scheme: dark;
+}

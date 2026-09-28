@@ -1,0 +1,46 @@
+{
+  "name": "Pensly — site vitrine",
+
+  // Image de base générique : la feature Node ci-dessous installe la dernière
+  // version 22.x au moment du build du conteneur. Éviter l'image
+  // javascript-node:*-bookworm préconstruite — ses tags sont figés à un
+  // instantané qui a fini par traîner derrière les exigences de Nuxt.
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  },
+  "remoteUser": "vscode",
+
+  // node_modules en volume nommé : sur Windows, un bind-mount vers un conteneur
+  // Linux rendrait `npm install` et le serveur de dev très lents (des milliers
+  // de petits fichiers traversant la couche de partage de fichiers).
+  "mounts": [
+    "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume"
+  ],
+
+  // Un volume nommé neuf appartient à root avant que l'utilisateur du conteneur
+  // ne prenne la main : le chown est nécessaire avant que npm puisse y écrire.
+  "postCreateCommand": "sudo chown -R $(id -un):$(id -gn) node_modules && npm install",
+
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Nuxt — npm run dev",
+      "onAutoForward": "notify"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Vue.volar",
+        "EditorConfig.EditorConfig"
+      ],
+      "settings": {
+        "typescript.tsdk": "node_modules/typescript/lib"
+      }
+    }
+  }
+}

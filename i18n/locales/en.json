@@ -1,0 +1,373 @@
+{
+  "brand": {
+    "name": "Pensly",
+    "tagline": "Quick notes, light mind."
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "primary": "Main navigation",
+    "home": "Home",
+    "download": "Download",
+    "guide": "Guide",
+    "changelog": "Changelog",
+    "privacy": "Privacy",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "features": "Features",
+    "ai": "AI",
+    "faq": "FAQ"
+  },
+  "lang": {
+    "label": "Language",
+    "fr": "Français",
+    "en": "English",
+    "es": "Español"
+  },
+  "theme": {
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme"
+  },
+  "common": {
+    "downloadShort": "Download",
+    "downloadWindows": "Download for Windows",
+    "downloadVersion": "Download Pensly {version}",
+    "downloadPage": "Go to the download page",
+    "readGuide": "Read the guide",
+    "seeChangelog": "See the changelog",
+    "allVersions": "All published releases",
+    "onGithub": "View on GitHub",
+    "windowsOnly": "Windows 10 and 11 · 64-bit",
+    "free": "Free · MIT licence · No account",
+    "version": "Version",
+    "size": "Size",
+    "published": "Published",
+    "unknown": "unavailable",
+    "newTab": "(new tab)",
+    "fallbackNotice": "Release details could not be fetched when this site was built. The button above points to the official releases page, where the latest installer is always available.",
+    "platformNotice": "You appear to be on {platform}. Pensly is currently 64-bit Windows only — the download above will not run on your machine.",
+    "platformNoticeLink": "Follow the macOS and Linux support question",
+    "platformMac": "macOS",
+    "platformLinux": "Linux"
+  },
+  "footer": {
+    "about": "A local note-taking app for Windows. Your notes stay on your machine, and they stay files.",
+    "navTitle": "This site",
+    "projectTitle": "The project",
+    "sourceCode": "Source code and releases",
+    "reportIssue": "Report an issue",
+    "license": "MIT licence · © 2026 Tals",
+    "noTracking": "This site sets no cookies.",
+    "releases": "Releases on GitHub"
+  },
+  "home": {
+    "meta": {
+      "title": "Pensly — quick notes, light mind",
+      "description": "A 100% local note-taking app for Windows. No account, no server, no telemetry: your notes stay readable Markdown files on your disk."
+    },
+    "hero": {
+      "lede": "100% local. No account, no server, no telemetry. Your notes stay readable Markdown files on your disk.",
+      "meta": "Free · Open source · Windows 10/11 x64",
+      "shotAlt": "The Pensly window: note list on the left, Markdown editor on the right."
+    },
+    "proofs": {
+      "label": "At a glance",
+      "account": "No account",
+      "server": "No server",
+      "telemetry": "No telemetry",
+      "markdown": "Markdown files"
+    },
+    "features": {
+      "eyebrow": "Features",
+      "title": "Write, capture, link, find.",
+      "write": {
+        "title": "Write",
+        "i1": "Markdown editor (CodeMirror 6) with toolbar and preview.",
+        "i2": "Autosave as you type, pinned notes.",
+        "i3": "Note templates with {vars} variables.",
+        "i4": "Clickable {task} tasks, plus a global view of open tasks."
+      },
+      "capture": {
+        "title": "Capture fast",
+        "i1": "Quick capture with the global shortcut {keys} (configurable), in an always-on-top window.",
+        "i2": "Daily note: each capture is appended as a timestamped bullet.",
+        "i3": "Lives in the system tray, always ready."
+      },
+      "organize": {
+        "title": "Organise and link",
+        "i1": "{link} links with autocompletion, and backlinks.",
+        "i2": "Tags with suggestions and filtering.",
+        "i3": "Folders and notebooks in a tree."
+      },
+      "find": {
+        "title": "Find",
+        "i1": "Instant full-text search, highlighted snippets, operators.",
+        "i2": "Command palette {keys}: notes and actions.",
+        "i3": "Everything from the keyboard: {keys}."
+      }
+    },
+    "files": {
+      "eyebrow": "Privacy",
+      "title": "Your files, not our cloud.",
+      "body": "Your notes live in a local SQLite database, mirrored as Markdown with YAML front matter. Plain text that any editor can open.",
+      "i1": "Markdown copy in {path}, folder configurable.",
+      "i2": "Works with Obsidian and VS Code.",
+      "i3": "Optional two-way sync with that folder.",
+      "i4": "Import an existing Markdown folder.",
+      "i5": "Native PDF export.",
+      "fileLabel": "A sample note, exactly as written to disk",
+      "fm": {
+        "title": "Project ideas",
+        "tag1": "personal",
+        "tag2": "ideas",
+        "task": "Review",
+        "link": "Launch plan"
+      }
+    },
+    "security": {
+      "eyebrow": "Security and reliability",
+      "title": "What should stay private does.",
+      "encTitle": "Per-note encryption",
+      "encBody": "Argon2 and AES-GCM, unlocked by a passphrase. The key is never written to disk.",
+      "leakTitle": "Nothing leaks",
+      "leakBody": "An encrypted note is never copied to disk as Markdown, nor sent to an AI.",
+      "historyTitle": "Version history",
+      "historyBody": "Local history for every note, with diff and restore.",
+      "warnTitle": "Good to know",
+      "warnBody": "Without the passphrase, no recovery is possible."
+    },
+    "ai": {
+      "eyebrow": "AI",
+      "title": "AI, if you want it.",
+      "lede": "Off by default. Once enabled, it suggests how your text continues, in grey.",
+      "demoLabel": "Autocompletion example",
+      "demoText": "Meeting on Thursday: approve the budget and ",
+      "demoGhost": "set the launch date.",
+      "hint": "{tab} accepts, {esc} dismisses.",
+      "localTitle": "Local",
+      "localBadge": "Nothing leaves your machine",
+      "localBody": "Ollama with lightweight models ({models}), downloaded from within the app.",
+      "cloudTitle": "Cloud",
+      "cloudBadge": "Your own key",
+      "cloudBody": "Gemini, OpenAI or Mistral with your own API key, stored in the Windows credential store and never exposed to the interface.",
+      "escKey": "Esc"
+    },
+    "comfort": {
+      "title": "Comfort",
+      "theme": "Light or dark theme",
+      "lang": "FR, EN, ES interface",
+      "sidebar": "Collapsible sidebar",
+      "updates": "Automatic updates"
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Frequently asked questions",
+      "q1": "Do I need an account?",
+      "a1": "No. Pensly installs and runs without any sign-up.",
+      "q2": "Where are my notes?",
+      "a2": "In a local SQLite database, with a Markdown copy in Documents/Pensly (folder configurable).",
+      "q3": "Is Pensly free?",
+      "a3": "Yes. Pensly is open source, under the MIT licence.",
+      "q4": "Is there a macOS or Linux version?",
+      "a4": "No. Pensly is Windows-only for now.",
+      "q5": "Does the AI read my notes?",
+      "a5": "Only if you turn it on. In local mode, nothing leaves your machine. Encrypted notes are never sent.",
+      "q6": "What if I forget my passphrase?",
+      "a6": "Encrypted notes become unrecoverable. That is the point: only you hold the key."
+    },
+    "cta": {
+      "title": "Your notes, at home.",
+      "body": "Free, open source, no account."
+    },
+    "diptych": {
+      "caption": "On the left, the note inside Pensly. On the right, the file actually written to your disk, at the very same moment.",
+      "appLabel": "In the app",
+      "fileLabel": "On your disk",
+      "path": "Documents/Pensly/recipe-ideas-14.md",
+      "windowTitle": "Pensly",
+      "noteTitle": "Recipe ideas",
+      "tag1": "cooking",
+      "tag2": "drafts",
+      "line1": "Leek tart — mustard under the pastry.",
+      "line2": "Lemon risotto: save the zest for the end.",
+      "line3": "Try the no-knead bread on Saturday.",
+      "savedLabel": "Saved",
+      "replayLabel": "Replay the animation"
+    }
+  },
+  "download": {
+    "meta": {
+      "title": "Download Pensly for Windows",
+      "description": "The 64-bit Windows installer for Pensly, with what to do about the SmartScreen warning and how to check the signature."
+    },
+    "title": "Download Pensly",
+    "lede": "One installer, no account, nothing to set up first. Do read the section about the Windows warning though — it will save you a nasty surprise.",
+    "cardTitle": "Latest release",
+    "cardUnavailable": "Release details unavailable at build time",
+    "signature": "Signature file (.sig)",
+    "requirementsTitle": "Requirements",
+    "req1": "Windows 10 or Windows 11, 64-bit architecture (x64).",
+    "req2": "No account and no permanent connection: Pensly works offline.",
+    "req3": "A writable folder for your notes — Documents/Pensly by default, changeable afterwards.",
+    "stepsTitle": "Installing",
+    "step1Title": "Download the installer",
+    "step1Body": "The file is named Pensly_[version]_x64-setup.exe. It is published in the public releases repository.",
+    "step2Title": "Run it",
+    "step2Body": "A double-click is enough. The installer asks for no special administrator rights and no account.",
+    "step3Title": "Get past the Windows warning",
+    "step3Body": "Windows will show a blue screen saying it protected your PC. The section below explains why, and what to do.",
+    "step4Title": "Write",
+    "step4Body": "Pensly opens, creates the Documents/Pensly folder and lets you write. Ctrl+Shift+N works from the very first note.",
+    "smartscreen": {
+      "eyebrow": "Read this before clicking",
+      "title": "Windows will show a warning. That is expected.",
+      "body": "When you run the installer, Windows displays a blue screen reading “Windows protected your PC”, with a “Don't run” button. This is not a virus detection: it is SmartScreen flagging a publisher it does not know yet.",
+      "whyTitle": "Why",
+      "whyBody": "Pensly is not signed with an Authenticode certificate. Those certificates cost several hundred euros a year and require company identity verification. Until that changes, Windows will keep warning — even though the file is perfectly clean.",
+      "howTitle": "What to do",
+      "how1": "Click “More info”, in small text under the message.",
+      "how2": "Click “Run anyway”.",
+      "afterBody": "The warning will not come back for this file. It will return with the next release, until a certificate is in place.",
+      "trustTitle": "If you would rather not take our word for it",
+      "trustBody": "That is fair. The next section covers what you can verify, and what you cannot."
+    },
+    "verify": {
+      "title": "Checking where the file comes from",
+      "body": "Every release publishes a .sig file alongside the installer. It is the signature produced by the Tauri updater key — the same key that authorises automatic updates inside the app.",
+      "item1": "The installer and its signature are published together, on the release page, in a public repository.",
+      "item2": "If Pensly is already installed, the update mechanism checks that signature before installing anything: a binary tampered with in transit is rejected.",
+      "item3": "The code is MIT licensed: nothing stops you from reading it, or building it yourself.",
+      "honestyTitle": "What it does not do",
+      "honestyBody": "The .sig file protects the update chain. It is not an Authenticode signature and it will not make the SmartScreen warning go away. The two mechanisms are unrelated."
+    },
+    "previousTitle": "Previous releases",
+    "previousBody": "Every published release stays available, with its notes and its files."
+  },
+  "guide": {
+    "meta": {
+      "title": "Getting started — Pensly",
+      "description": "Quick start, the full shortcut list, how file-based syncing really works, and importing from Obsidian or Notion."
+    },
+    "title": "Guide",
+    "lede": "Enough to be productive in five minutes, then everything else.",
+    "tocTitle": "On this page",
+    "start": {
+      "title": "Quick start",
+      "step1Title": "Write a first note",
+      "step1Body": "Ctrl+N creates a note. The first line is the title; the rest is Markdown. Saving happens on its own, half a second after your last keystroke.",
+      "step2Title": "Look at the folder",
+      "step2Body": "Open Documents/Pensly in Explorer: the .md file is already there. That is the whole idea — the note and the file are one and the same.",
+      "step3Title": "Sort with tags",
+      "step3Body": "Add tags to the note; they end up in the file's YAML front-matter. Ctrl+P pins a note to the top of the list.",
+      "step4Title": "Build the global-shortcut habit",
+      "step4Body": "Ctrl+Shift+N opens a small capture window over any application. You type, you close it, it is saved."
+    },
+    "shortcuts": {
+      "title": "Shortcuts",
+      "caption": "Pensly keyboard shortcuts",
+      "colShortcut": "Shortcut",
+      "colAction": "Action",
+      "global": "Quick capture, even outside the app (configurable)",
+      "new": "New note",
+      "search": "Search",
+      "delete": "Delete note",
+      "pin": "Pin or unpin",
+      "bold": "Bold",
+      "italic": "Italic",
+      "note": "The global shortcut is the only one that works when Pensly does not have focus. It is also the only one you can redefine."
+    },
+    "files": {
+      "title": "How the “sync” works",
+      "body": "Pensly does not sync anything. It writes. Those are two different things, and the difference decides what you can expect.",
+      "step1": "You write a note in Pensly. It is saved in a local SQLite database.",
+      "step2": "Right after, Pensly writes the matching .md file into the notes folder, with its YAML front-matter.",
+      "step3": "If that folder is covered by Google Drive, OneDrive, Dropbox or any sync tool, that tool handles the rest — exactly as it does for your other documents.",
+      "frontmatterTitle": "What a file looks like",
+      "warnTitle": "The limits, plainly",
+      "warn1": "There is no conflict merging. Two machines editing the same note at once will produce a conflict, arbitrated by your sync tool, not by Pensly.",
+      "warn2": "Propagation is not instant: it depends entirely on how fast Drive or OneDrive is.",
+      "warn3": "Editing a .md file by hand, outside Pensly, is not a supported scenario."
+    },
+    "import": {
+      "title": "Coming from Obsidian or Notion",
+      "body": "Pensly imports a folder of .md files. An Obsidian vault is already in that format; for Notion, export to Markdown first.",
+      "obsidianTitle": "From Obsidian",
+      "obsidianBody": "Pick the vault folder, or any subfolder. Existing front-matter is read and the files are taken as they are.",
+      "notionTitle": "From Notion",
+      "notionBody": "In Notion: Settings, then Export, in Markdown format. Unzip the archive, then point Pensly at the resulting folder.",
+      "exportTitle": "And to leave",
+      "exportBody": "Nothing special to do: the notes folder already is the export. For a single note, PDF and plain-text export are available from the app."
+    },
+    "comfort": {
+      "title": "Settings",
+      "themeTitle": "Theme",
+      "themeBody": "Light or dark, your choice, independently of Windows.",
+      "langTitle": "Language",
+      "langBody": "French, English and Spanish. On first launch, Pensly follows the system language.",
+      "folderTitle": "Notes folder",
+      "folderBody": "Documents/Pensly by default. You can move it, for instance into an already-synced folder.",
+      "updateTitle": "Updates",
+      "updateBody": "Pensly checks for new releases and installs them after verifying their signature."
+    }
+  },
+  "changelog": {
+    "meta": {
+      "title": "Changelog — Pensly",
+      "description": "Pensly release notes, newest first."
+    },
+    "title": "Changelog",
+    "lede": "What changed, release by release. The list is taken from the releases published on GitHub when this site was built.",
+    "current": "Current release",
+    "prerelease": "Pre-release",
+    "noNotes": "This release was published without notes.",
+    "viewOnGithub": "View this release on GitHub",
+    "emptyTitle": "Changelog unavailable",
+    "emptyBody": "Release notes could not be fetched while building this site. They are still available on the public repository.",
+    "emptyLink": "See the releases on GitHub"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy — Pensly",
+      "description": "What Pensly and this site collect: nothing. Where your notes are stored, and the only outgoing connections."
+    },
+    "title": "Privacy",
+    "lede": "Short version: Pensly collects nothing, and neither does this site. The details fit on one page.",
+    "appTitle": "The app",
+    "app1Title": "No account",
+    "app1Body": "There is no sign-up. So no email address, no password, no profile, no user database.",
+    "app2Title": "No server",
+    "app2Body": "Pensly sends your notes nowhere. There is no online service where they could be stored.",
+    "app3Title": "No telemetry",
+    "app3Body": "No usage statistics, no automatic crash reports, no installation identifier.",
+    "app4Title": "One outgoing connection",
+    "app4Body": "The update check queries GitHub to compare version numbers and fetch the signed installer. Nothing you write is transmitted.",
+    "storageTitle": "Where your notes are",
+    "storage1": "The .md files are in Documents/Pensly, or in the folder you chose.",
+    "storage2": "The SQLite database that runs the app is stored locally, on the same machine.",
+    "storage3": "Pensly encrypts nothing: the files are plain text, protected by your Windows session.",
+    "siteTitle": "This site",
+    "site1Title": "No tracker",
+    "site1Body": "No analytics tool, no advertising cookie, no third-party script. The pages are static and call no server back once loaded.",
+    "site2Title": "One preference, no cookies",
+    "site2Body": "Your theme choice is kept in the browser's local storage, only to show the site the way you left it; it goes nowhere. The language is carried by the page address (/, /en, /es). No cookie is set.",
+    "site3Title": "The download links",
+    "site3Body": "Installers are hosted by GitHub. Clicking a download link takes you to their servers, under their own privacy policy.",
+    "contactTitle": "A question",
+    "contactBody": "The code and the releases are public. Questions belong in the repository issues.",
+    "updated": "Page current as of 31 July 2026."
+  },
+  "notFound": {
+    "meta": {
+      "title": "Page not found — Pensly",
+      "description": "This page does not exist."
+    },
+    "code": "404",
+    "title": "This page does not exist.",
+    "body": "The link may be old, or the address may have a typo in it. Your notes, meanwhile, are exactly where you left them.",
+    "back": "Back to the home page"
+  },
+  "error": {
+    "title": "Something went wrong.",
+    "body": "An unexpected error occurred while rendering this page.",
+    "back": "Back to the home page"
+  }
+}
