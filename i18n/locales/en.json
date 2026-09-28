@@ -62,10 +62,10 @@
   "home": {
     "meta": {
       "title": "Pensly — quick notes, light mind",
-      "description": "A 100% local note-taking app for Windows. No account, no server, no telemetry: your notes stay readable Markdown files on your disk."
+      "description": "A 100% local desktop note-taking app for Windows. No account, no server, no telemetry: your notes live in a SQLite database on your machine and are mirrored as readable Markdown files."
     },
     "hero": {
-      "lede": "100% local. No account, no server, no telemetry. Your notes stay readable Markdown files on your disk.",
+      "lede": "A desktop note-taking app, 100% local. No account, no server, no telemetry: your notes live on your machine and are mirrored as readable Markdown files in Documents/Pensly.",
       "meta": "Free · Open source · Windows 10/11 x64",
       "shotAlt": "The Pensly window: note list on the left, Markdown editor on the right."
     },
@@ -81,39 +81,39 @@
       "title": "Write, capture, link, find.",
       "write": {
         "title": "Write",
-        "i1": "Markdown editor (CodeMirror 6) with toolbar and preview.",
-        "i2": "Autosave as you type, pinned notes.",
-        "i3": "Note templates with {vars} variables.",
-        "i4": "Clickable {task} tasks, plus a global view of open tasks."
+        "i1": "Markdown editor (CodeMirror 6) with toolbar and rendered preview.",
+        "i2": "Autosave as you type, pin the notes that matter.",
+        "i3": "Note templates, with {vars} variables filled in on creation.",
+        "i4": "Clickable {task} checkboxes in the preview, and a view that gathers open tasks from every note."
       },
       "capture": {
         "title": "Capture fast",
-        "i1": "Quick capture with the global shortcut {keys} (configurable), in an always-on-top window.",
-        "i2": "Daily note: each capture is appended as a timestamped bullet.",
-        "i3": "Lives in the system tray, always ready."
+        "i1": "An always-on-top mini window, opened with the global shortcut {keys} (configurable) from any application.",
+        "i2": "By default, each capture is appended to today's daily note as a timestamped bullet. Or becomes a new note, your choice.",
+        "i3": "Lives in the system tray: closing the window hides it, Pensly stays ready."
       },
       "organize": {
         "title": "Organise and link",
-        "i1": "{link} links with autocompletion, and backlinks.",
-        "i2": "Tags with suggestions and filtering.",
-        "i3": "Folders and notebooks in a tree."
+        "i1": "{link} links with title autocompletion, and a backlinks bar under the editor.",
+        "i2": "Tags with suggestions, one-click filtering from the sidebar.",
+        "i3": "Folders and notebooks in a tree, mirrored as subfolders on disk."
       },
       "find": {
         "title": "Find",
-        "i1": "Instant full-text search, highlighted snippets, operators.",
-        "i2": "Command palette {keys}: notes and actions.",
-        "i3": "Everything from the keyboard: {keys}."
+        "i1": "Instant full-text search (SQLite FTS5), highlighted snippets, operators.",
+        "i2": "Command palette {keys}: jump to a note, create from a template, export, open history…",
+        "i3": "Everything from the keyboard: {n} new note, {f} search, {p} pin, {d} delete."
       }
     },
     "files": {
       "eyebrow": "Privacy",
       "title": "Your files, not our cloud.",
-      "body": "Your notes live in a local SQLite database, mirrored as Markdown with YAML front matter. Plain text that any editor can open.",
-      "i1": "Markdown copy in {path}, folder configurable.",
-      "i2": "Works with Obsidian and VS Code.",
-      "i3": "Optional two-way sync with that folder.",
-      "i4": "Import an existing Markdown folder.",
-      "i5": "Native PDF export.",
+      "body": "Every note is mirrored as a .md file with YAML front matter. The SQLite database stays the source of truth; the folder opens in any editor.",
+      "i1": "Markdown mirror in {path}, folder configurable, rebuilt on launch if it was moved or deleted.",
+      "i2": "Obsidian-compatible syntax, readable in VS Code or any text editor.",
+      "i3": "Optional two-way sync: a file edited outside Pensly is imported back.",
+      "i4": "Import an existing Markdown folder, front matter included.",
+      "i5": "Native PDF export, no print dialog.",
       "fileLabel": "A sample note, exactly as written to disk",
       "fm": {
         "title": "Project ideas",
@@ -127,28 +127,28 @@
       "eyebrow": "Security and reliability",
       "title": "What should stay private does.",
       "encTitle": "Per-note encryption",
-      "encBody": "Argon2 and AES-GCM, unlocked by a passphrase. The key is never written to disk.",
+      "encBody": "A vault protected by a passphrase: key derived with Argon2, content encrypted with AES-GCM. The key stays in memory, never on disk.",
       "leakTitle": "Nothing leaks",
-      "leakBody": "An encrypted note is never copied to disk as Markdown, nor sent to an AI.",
+      "leakBody": "An encrypted note is not exported to the Markdown mirror, and is never sent to an AI.",
       "historyTitle": "Version history",
-      "historyBody": "Local history for every note, with diff and restore.",
+      "historyBody": "A snapshot on every saved change. Compare two versions, restore the right one.",
       "warnTitle": "Good to know",
       "warnBody": "Without the passphrase, no recovery is possible."
     },
     "ai": {
       "eyebrow": "AI",
       "title": "AI, if you want it.",
-      "lede": "Off by default. Once enabled, it suggests how your text continues, in grey.",
+      "lede": "Off by default. Once enabled, it suggests how your text continues, in grey, after a short pause.",
       "demoLabel": "Autocompletion example",
       "demoText": "Meeting on Thursday: approve the budget and ",
       "demoGhost": "set the launch date.",
-      "hint": "{tab} accepts, {esc} dismisses.",
+      "hint": "{tab} accepts, {esc} or any keystroke dismisses.",
       "localTitle": "Local",
       "localBadge": "Nothing leaves your machine",
-      "localBody": "Ollama with lightweight models ({models}), downloaded from within the app.",
+      "localBody": "Ollama, with one of the two fastest models ({models}). Downloaded from within the app, with help installing Ollama.",
       "cloudTitle": "Cloud",
-      "cloudBadge": "Your own key",
-      "cloudBody": "Gemini, OpenAI or Mistral with your own API key, stored in the Windows credential store and never exposed to the interface.",
+      "cloudBadge": "Opt-in, your own key",
+      "cloudBody": "Gemini, OpenAI or Mistral with your API key, tested then stored in Windows Credential Manager. Calls are made by the app core: the key never reaches the interface. The only, deliberate, exception to fully local.",
       "escKey": "Esc"
     },
     "comfort": {
@@ -164,13 +164,13 @@
       "q1": "Do I need an account?",
       "a1": "No. Pensly installs and runs without any sign-up.",
       "q2": "Where are my notes?",
-      "a2": "In a local SQLite database, with a Markdown copy in Documents/Pensly (folder configurable).",
+      "a2": "In a SQLite database on your machine, mirrored as Markdown files in Documents/Pensly (folder configurable).",
       "q3": "Is Pensly free?",
       "a3": "Yes. Pensly is open source, under the MIT licence.",
       "q4": "Is there a macOS or Linux version?",
       "a4": "No. Pensly is Windows-only for now.",
       "q5": "Does the AI read my notes?",
-      "a5": "Only if you turn it on. In local mode, nothing leaves your machine. Encrypted notes are never sent.",
+      "a5": "Only if you turn it on. Locally (Ollama), nothing leaves your machine. In the cloud, the text needed for the suggestion is sent to the provider you chose. Encrypted notes are never sent.",
       "q6": "What if I forget my passphrase?",
       "a6": "Encrypted notes become unrecoverable. That is the point: only you hold the key."
     },

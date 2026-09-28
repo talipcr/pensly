@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const release = useLatestRelease()
 const config = useRuntimeConfig()
 const repoUrl = config.public.repoUrl
@@ -50,14 +50,19 @@ const proofs = [
   { icon: 'lucide:file-text', key: 'markdown' },
 ]
 
-const featureGroups: { id: string, icon: string, items: Item[] }[] = [
+// Variables de modèle reconnues par l'app : {{heure}}/{{time}}, {{titre}}/{{title}}.
+const templateVars = computed(() =>
+  locale.value === 'en' ? ['{{date}}', '{{time}}', '{{title}}'] : ['{{date}}', '{{heure}}', '{{titre}}'],
+)
+
+const featureGroups = computed((): { id: string, icon: string, items: Item[] }[] => [
   {
     id: 'write',
     icon: 'lucide:pen-line',
     items: [
       { key: 'i1' },
       { key: 'i2' },
-      { key: 'i3', inserts: { vars: { kind: 'code', values: ['{{date}}', '{{heure}}', '{{titre}}'] } } },
+      { key: 'i3', inserts: { vars: { kind: 'code', values: templateVars.value } } },
       { key: 'i4', inserts: { task: { kind: 'code', values: ['- [ ]'] } } },
     ],
   },
@@ -85,10 +90,18 @@ const featureGroups: { id: string, icon: string, items: Item[] }[] = [
     items: [
       { key: 'i1' },
       { key: 'i2', inserts: { keys: { kind: 'kbd', values: ['Ctrl+K'] } } },
-      { key: 'i3', inserts: { keys: { kind: 'kbd', values: ['Ctrl+N', 'Ctrl+F', 'Ctrl+P', 'Ctrl+D'] } } },
+      {
+        key: 'i3',
+        inserts: {
+          n: { kind: 'kbd', values: ['Ctrl+N'] },
+          f: { kind: 'kbd', values: ['Ctrl+F'] },
+          p: { kind: 'kbd', values: ['Ctrl+P'] },
+          d: { kind: 'kbd', values: ['Ctrl+D'] },
+        },
+      },
     ],
   },
-]
+])
 
 const fileItems: Item[] = [
   { key: 'i1', inserts: { path: { kind: 'code', values: ['Documents/Pensly'] } } },

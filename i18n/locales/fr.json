@@ -62,10 +62,10 @@
   "home": {
     "meta": {
       "title": "Pensly — notes rapides, esprit léger",
-      "description": "Application de notes 100 % locale pour Windows. Aucun compte, aucun serveur, aucune télémétrie : vos notes restent des fichiers Markdown lisibles sur votre disque."
+      "description": "Application de notes desktop 100 % locale pour Windows. Aucun compte, aucun serveur, aucune télémétrie : vos notes vivent dans une base SQLite sur votre machine et sont recopiées en fichiers Markdown lisibles."
     },
     "hero": {
-      "lede": "100 % local. Aucun compte, aucun serveur, aucune télémétrie. Vos notes restent des fichiers Markdown lisibles sur votre disque.",
+      "lede": "Application de notes desktop, 100 % locale. Aucun compte, aucun serveur, aucune télémétrie : vos notes vivent sur votre machine et sont recopiées en fichiers Markdown lisibles dans Documents/Pensly.",
       "meta": "Gratuit · Open source · Windows 10/11 x64",
       "shotAlt": "Fenêtre de Pensly : liste des notes à gauche, éditeur Markdown à droite."
     },
@@ -81,39 +81,39 @@
       "title": "Écrire, capturer, relier, retrouver.",
       "write": {
         "title": "Écrire",
-        "i1": "Éditeur Markdown (CodeMirror 6) avec barre d'outils et aperçu.",
-        "i2": "Enregistrement automatique pendant la frappe, épinglage des notes.",
-        "i3": "Modèles de note avec variables {vars}.",
-        "i4": "Tâches {task} cliquables, et vue globale des tâches ouvertes."
+        "i1": "Éditeur Markdown (CodeMirror 6) avec barre d'outils et aperçu rendu.",
+        "i2": "Enregistrement automatique pendant la frappe, épinglage des notes importantes.",
+        "i3": "Modèles de note, avec variables {vars} remplies à la création.",
+        "i4": "Cases {task} cliquables dans l'aperçu, et une vue qui rassemble les tâches ouvertes de toutes les notes."
       },
       "capture": {
         "title": "Capturer vite",
-        "i1": "Capture rapide par raccourci global {keys} (configurable), fenêtre toujours au premier plan.",
-        "i2": "Note du jour : chaque capture s'y ajoute en puce horodatée.",
-        "i3": "Résidente dans la barre système, toujours prête."
+        "i1": "Mini-fenêtre toujours au premier plan, ouverte par le raccourci global {keys} (configurable), depuis n'importe quelle application.",
+        "i2": "Par défaut, chaque capture s'ajoute en puce horodatée à la note du jour. Ou devient une nouvelle note, au choix.",
+        "i3": "Résidente dans la zone de notification : fermer la fenêtre la masque, Pensly reste prêt."
       },
       "organize": {
         "title": "Organiser et relier",
-        "i1": "Liens {link} avec autocomplétion, et backlinks.",
-        "i2": "Tags avec suggestions et filtrage.",
-        "i3": "Dossiers et carnets en arborescence."
+        "i1": "Liens {link} avec autocomplétion des titres, et barre de backlinks sous l'éditeur.",
+        "i2": "Tags avec suggestions, filtrage en un clic depuis la barre latérale.",
+        "i3": "Dossiers et carnets en arborescence, reproduits en sous-dossiers sur le disque."
       },
       "find": {
         "title": "Retrouver",
-        "i1": "Recherche plein texte instantanée, extraits surlignés, opérateurs.",
-        "i2": "Palette de commandes {keys} : notes et actions.",
-        "i3": "Tout au clavier : {keys}."
+        "i1": "Recherche plein texte instantanée (SQLite FTS5), extraits surlignés, opérateurs.",
+        "i2": "Palette de commandes {keys} : aller à une note, créer depuis un modèle, exporter, ouvrir l'historique…",
+        "i3": "Tout au clavier : {n} nouvelle note, {f} rechercher, {p} épingler, {d} supprimer."
       }
     },
     "files": {
       "eyebrow": "Confidentialité",
       "title": "Vos fichiers, pas notre cloud.",
-      "body": "Vos notes vivent dans une base SQLite locale, doublée d'une copie Markdown avec front-matter YAML. Du texte, que n'importe quel éditeur sait ouvrir.",
-      "i1": "Copie Markdown dans {path}, dossier configurable.",
-      "i2": "Compatible Obsidian et VS Code.",
-      "i3": "Synchronisation bidirectionnelle optionnelle avec ce dossier.",
-      "i4": "Import d'un dossier Markdown existant.",
-      "i5": "Export PDF natif.",
+      "body": "Chaque note est recopiée en fichier .md avec front-matter YAML. La base SQLite reste la source de vérité ; le dossier, lui, s'ouvre avec n'importe quel éditeur.",
+      "i1": "Miroir Markdown dans {path}, dossier configurable, reconstruit au lancement s'il a été déplacé ou supprimé.",
+      "i2": "Syntaxe compatible Obsidian, lisible dans VS Code ou tout éditeur de texte.",
+      "i3": "Synchronisation bidirectionnelle optionnelle : un fichier modifié hors de Pensly est réimporté.",
+      "i4": "Import d'un dossier Markdown existant, front-matter compris.",
+      "i5": "Export PDF natif, sans boîte d'impression.",
       "fileLabel": "Exemple de note, telle qu'elle est écrite sur le disque",
       "fm": {
         "title": "Idées projet",
@@ -127,28 +127,28 @@
       "eyebrow": "Sécurité et fiabilité",
       "title": "Ce qui doit rester privé le reste.",
       "encTitle": "Chiffrement note par note",
-      "encBody": "Argon2 et AES-GCM, déverrouillés par une phrase secrète. La clé n'est jamais écrite sur le disque.",
+      "encBody": "Coffre protégé par une phrase secrète : clé dérivée par Argon2, contenu chiffré en AES-GCM. La clé reste en mémoire, jamais sur le disque.",
       "leakTitle": "Rien ne fuit",
-      "leakBody": "Une note chiffrée n'est jamais copiée en Markdown sur le disque, ni envoyée à une IA.",
+      "leakBody": "Une note chiffrée n'est pas exportée dans le miroir Markdown, et n'est jamais envoyée à une IA.",
       "historyTitle": "Historique de versions",
-      "historyBody": "Historique local de chaque note, avec comparaison (diff) et restauration.",
+      "historyBody": "Un instantané à chaque modification enregistrée. Comparez deux versions, restaurez la bonne.",
       "warnTitle": "À savoir",
       "warnBody": "Sans la phrase secrète, aucune récupération n'est possible."
     },
     "ai": {
       "eyebrow": "IA",
       "title": "IA, si vous le voulez.",
-      "lede": "Désactivée par défaut. Une fois activée, elle propose la suite de votre texte en gris.",
+      "lede": "Désactivée par défaut. Une fois activée, elle suggère la suite de votre texte en gris, après une courte pause.",
       "demoLabel": "Exemple d'autocomplétion",
       "demoText": "Réunion jeudi : valider le budget et ",
       "demoGhost": "fixer la date de lancement.",
-      "hint": "{tab} accepte, {esc} ignore.",
+      "hint": "{tab} accepte, {esc} ou toute frappe ignore.",
       "localTitle": "Locale",
       "localBadge": "Rien ne sort de la machine",
-      "localBody": "Ollama et des modèles légers ({models}), téléchargés depuis l'application.",
+      "localBody": "Ollama, avec l'un des deux modèles les plus rapides ({models}). Téléchargement depuis l'application, aide à l'installation d'Ollama incluse.",
       "cloudTitle": "Cloud",
-      "cloudBadge": "Votre propre clé",
-      "cloudBody": "Gemini, OpenAI ou Mistral avec votre propre clé API, stockée dans le trousseau Windows et jamais exposée à l'interface.",
+      "cloudBadge": "Opt-in, votre propre clé",
+      "cloudBody": "Gemini, OpenAI ou Mistral avec votre clé API, testée puis stockée dans le gestionnaire d'identifiants Windows. Les appels partent du cœur de l'application : la clé n'atteint jamais l'interface. Seule exception, volontaire, au tout-local.",
       "escKey": "Échap"
     },
     "comfort": {
@@ -164,13 +164,13 @@
       "q1": "Faut-il un compte ?",
       "a1": "Non. Pensly s'installe et s'utilise sans inscription.",
       "q2": "Où sont mes notes ?",
-      "a2": "Dans une base SQLite locale, avec une copie Markdown dans Documents/Pensly (dossier configurable).",
+      "a2": "Dans une base SQLite sur votre machine, recopiée en fichiers Markdown dans Documents/Pensly (dossier configurable).",
       "q3": "Pensly est-il gratuit ?",
       "a3": "Oui. Pensly est open source, sous licence MIT.",
       "q4": "Existe-t-il une version macOS ou Linux ?",
       "a4": "Non. Pensly est disponible sur Windows uniquement pour l'instant.",
       "q5": "L'IA lit-elle mes notes ?",
-      "a5": "Seulement si vous l'activez. En mode local, rien ne sort de votre machine. Les notes chiffrées ne sont jamais envoyées.",
+      "a5": "Seulement si vous l'activez. En local (Ollama), rien ne sort de votre machine. En cloud, le texte nécessaire à la suggestion est envoyé au fournisseur choisi. Les notes chiffrées ne sont jamais envoyées.",
       "q6": "Et si j'oublie ma phrase secrète ?",
       "a6": "Les notes chiffrées deviennent irrécupérables. C'est le principe : vous seul détenez la clé."
     },
