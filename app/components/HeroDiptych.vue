@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /**
- * L'ancre visuelle du site : à gauche la note dans Pensly, à droite le fichier
+ * L'ancre visuelle du site : à gauche la note dans PandaKeep, à droite le fichier
  * .md qui s'écrit au même instant. Ce n'est pas une décoration — c'est la
  * promesse du produit, démontrée plutôt qu'affirmée.
  *

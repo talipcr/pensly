@@ -1,12 +1,12 @@
 {
-  "name": "pensly-site",
+  "name": "pandakeep-site",
   "private": true,
   "type": "module",
   "engines": {
     "node": ">=20.19.0"
   },
   "scripts": {
-    "dev": "nuxt dev",
+    "dev": "nuxt  dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

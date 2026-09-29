@@ -1,4 +1,4 @@
-import { latestRelease, releases } from '#build/pensly-releases.mjs'
+import { latestRelease, releases } from '#build/pandakeep-releases.mjs'
 
 /**
  * Données de release figées au build (voir modules/github-release.ts).

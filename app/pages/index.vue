@@ -12,7 +12,7 @@ useSeoMeta({
 })
 
 // Les props sont sérialisées au prérendu : ce sont des chaînes, pas des getters.
-defineOgImageComponent('PenslyOg', {
+defineOgImageComponent('PandaKeepOg', {
   title: t('brand.tagline'),
   description: t('home.hero.lede'),
 })
@@ -25,7 +25,7 @@ useHead(() => ({
     innerHTML: JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'SoftwareApplication',
-      'name': 'Pensly',
+      'name': 'PandaKeep',
       'description': t('home.meta.description'),
       'applicationCategory': 'Productivity',
       'operatingSystem': 'Windows 10, Windows 11',
@@ -155,7 +155,7 @@ const faq = [1, 2, 3, 4, 5, 6]
       <div class="window hero__shot">
         <div class="window__bar" aria-hidden="true">
           <BrandMark :size="14" />
-          <span class="window__title">Pensly</span>
+          <span class="window__title">PandaKeep</span>
           <span class="window__controls"><i /><i /><i /></span>
         </div>
         <img

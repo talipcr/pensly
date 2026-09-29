@@ -19,15 +19,15 @@ export default defineNuxtConfig({
   // Le domaine définitif se règle sans toucher au code :
   // NUXT_PUBLIC_SITE_URL=https://… au moment du build.
   site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://pensly.app',
-    name: 'Pensly',
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://pandakeep.app',
+    name: 'PandaKeep',
     defaultLocale: 'fr',
   },
 
   runtimeConfig: {
     public: {
       /** Renseigné au build par modules/github-release.ts */
-      penslyVersion: '',
+      pandakeepVersion: '',
       repoUrl: 'https://github.com/talipcr/pensly-releases',
     },
   },
@@ -35,10 +35,10 @@ export default defineNuxtConfig({
   app: {
     head: {
       // Les titres portent déjà la marque dans les fichiers de traduction :
-      // sans cela, @nuxtjs/seo ajouterait un « | Pensly » redondant.
+      // sans cela, @nuxtjs/seo ajouterait un « | PandaKeep » redondant.
       titleTemplate: '%s',
       htmlAttrs: { lang: 'fr' },
-      link: [{ rel: 'icon', type: 'image/svg+xml', href: '/pensly-logo.svg' }],
+      link: [{ rel: 'icon', type: 'image/svg+xml', href: '/pandakeep-logo.svg' }],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'theme-color', content: '#ffffff', media: '(prefers-color-scheme: light)' },
@@ -51,11 +51,11 @@ export default defineNuxtConfig({
     classSuffix: '',
     preference: 'system',
     fallback: 'light',
-    storageKey: 'pensly-color-mode',
+    storageKey: 'pandakeep-color-mode',
   },
 
   i18n: {
-    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://pensly.app',
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://pandakeep.app',
     defaultLocale: 'fr',
     strategy: 'prefix_except_default',
     // Les slugs traduits sont déclarés page par page via defineI18nRoute().
@@ -100,7 +100,7 @@ export default defineNuxtConfig({
 
   ogImage: {
     fonts: ['Inter:400', 'Inter:700'],
-    defaults: { component: 'PenslyOg', width: 1200, height: 630 },
+    defaults: { component: 'PandaKeepOg', width: 1200, height: 630 },
   },
 
   nitro: {

@@ -18,7 +18,7 @@ useSeoMeta({
   ogDescription: () => t('download.meta.description'),
 })
 
-defineOgImageComponent('PenslyOg', {
+defineOgImageComponent('PandaKeepOg', {
   title: t('download.title'),
   description: t('common.windowsOnly'),
 })

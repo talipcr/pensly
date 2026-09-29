@@ -5,7 +5,7 @@ const props = withDefaults(defineProps<{
   block?: boolean
   /** Affiche le nom de fichier réel sous le bouton. */
   showFile?: boolean
-  /** Remplace le libellé par défaut (« Télécharger Pensly x.y.z »). */
+  /** Remplace le libellé par défaut (« Télécharger PandaKeep x.y.z »). */
   label?: string
 }>(), { size: 'md', variant: 'primary', block: false, showFile: false, label: '' })
 

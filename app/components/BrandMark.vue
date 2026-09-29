@@ -3,10 +3,10 @@ withDefaults(defineProps<{ size?: number }>(), { size: 28 })
 </script>
 
 <template>
-  <!-- Le logo réel du produit (public/pensly-logo.svg), servi tel quel. -->
+  <!-- Le logo réel du produit (public/pandakeep-logo.svg), servi tel quel. -->
   <img
     class="brand-mark"
-    src="/pensly-logo.svg"
+    src="/pandakeep-logo.svg"
     :width="size"
     :height="size"
     alt=""

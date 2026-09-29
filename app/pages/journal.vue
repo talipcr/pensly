@@ -19,7 +19,7 @@ useSeoMeta({
   ogDescription: () => t('changelog.meta.description'),
 })
 
-defineOgImageComponent('PenslyOg', {
+defineOgImageComponent('PandaKeepOg', {
   title: t('changelog.title'),
   description: latest.version ? `${t('common.version')} ${latest.version}` : t('brand.tagline'),
 })
