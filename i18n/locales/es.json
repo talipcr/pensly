@@ -1,6 +1,6 @@
 {
   "brand": {
-    "name": "Pensly",
+    "name": "PandaKeep",
     "tagline": "Notas rápidas, mente ligera."
   },
   "nav": {
@@ -30,7 +30,7 @@
   "common": {
     "downloadShort": "Descargar",
     "downloadWindows": "Descargar para Windows",
-    "downloadVersion": "Descargar Pensly {version}",
+    "downloadVersion": "Descargar PandaKeep {version}",
     "downloadPage": "Ir a la página de descarga",
     "readGuide": "Leer la guía",
     "seeChangelog": "Ver las novedades",
@@ -44,7 +44,7 @@
     "unknown": "no disponible",
     "newTab": "(pestaña nueva)",
     "fallbackNotice": "No se pudieron obtener los datos de la versión al construir este sitio. El botón de arriba lleva a la página oficial de versiones, donde el instalador más reciente siempre está disponible.",
-    "platformNotice": "Parece que usas {platform}. Hoy Pensly solo existe para Windows de 64 bits: la descarga de arriba no funcionará en tu equipo.",
+    "platformNotice": "Parece que usas {platform}. Hoy PandaKeep solo existe para Windows de 64 bits: la descarga de arriba no funcionará en tu equipo.",
     "platformNoticeLink": "Seguir la cuestión del soporte para macOS y Linux",
     "platformMac": "macOS",
     "platformLinux": "Linux"
@@ -61,13 +61,13 @@
   },
   "home": {
     "meta": {
-      "title": "Pensly — notas rápidas, mente ligera",
-      "description": "Aplicación de notas 100 % local para Windows. Sin cuenta, sin servidor, sin telemetría: tus notas siguen siendo archivos Markdown legibles en tu disco."
+      "title": "PandaKeep — app de notas local y privada para Windows",
+      "description": "Aplicación de notas 100 % local para Windows. Sin cuenta, sin servidor, sin telemetría: tus notas se quedan en tu PC, en archivos Markdown legibles."
     },
     "hero": {
-      "lede": "100 % local. Sin cuenta, sin servidor, sin telemetría. Tus notas siguen siendo archivos Markdown legibles en tu disco.",
+      "lede": "Aplicación de notas de escritorio, 100 % local. Sin cuenta, sin servidor, sin telemetría: tus notas viven en tu equipo y se copian en archivos Markdown legibles en Documents/Pensly.",
       "meta": "Gratis · Código abierto · Windows 10/11 x64",
-      "shotAlt": "Ventana de Pensly: lista de notas a la izquierda, editor Markdown a la derecha."
+      "shotAlt": "Ventana de PandaKeep: lista de notas a la izquierda, editor Markdown a la derecha."
     },
     "proofs": {
       "label": "En resumen",
@@ -81,39 +81,39 @@
       "title": "Escribir, capturar, enlazar, encontrar.",
       "write": {
         "title": "Escribir",
-        "i1": "Editor Markdown (CodeMirror 6) con barra de herramientas y vista previa.",
-        "i2": "Guardado automático mientras escribes, notas fijadas.",
-        "i3": "Plantillas de nota con variables {vars}.",
-        "i4": "Tareas {task} clicables y vista global de las tareas abiertas."
+        "i1": "Editor Markdown (CodeMirror 6) con barra de herramientas y vista previa renderizada.",
+        "i2": "Guardado automático mientras escribes, fija las notas importantes.",
+        "i3": "Plantillas de nota, con variables {vars} rellenadas al crearla.",
+        "i4": "Casillas {task} clicables en la vista previa, y una vista que reúne las tareas abiertas de todas las notas."
       },
       "capture": {
         "title": "Capturar rápido",
-        "i1": "Captura rápida con el atajo global {keys} (configurable), en una ventana siempre visible.",
-        "i2": "Nota del día: cada captura se añade como viñeta con marca de hora.",
-        "i3": "Residente en la bandeja del sistema, siempre lista."
+        "i1": "Miniventana siempre visible, abierta con el atajo global {keys} (configurable) desde cualquier aplicación.",
+        "i2": "Por defecto, cada captura se añade como viñeta con marca de hora a la nota del día. O se convierte en una nota nueva, a tu elección.",
+        "i3": "Residente en la bandeja del sistema: cerrar la ventana la oculta, PandaKeep sigue listo."
       },
       "organize": {
         "title": "Organizar y enlazar",
-        "i1": "Enlaces {link} con autocompletado, y backlinks.",
-        "i2": "Etiquetas con sugerencias y filtrado.",
-        "i3": "Carpetas y cuadernos en árbol."
+        "i1": "Enlaces {link} con autocompletado de títulos, y barra de backlinks bajo el editor.",
+        "i2": "Etiquetas con sugerencias, filtrado en un clic desde la barra lateral.",
+        "i3": "Carpetas y cuadernos en árbol, reproducidos como subcarpetas en el disco."
       },
       "find": {
         "title": "Encontrar",
-        "i1": "Búsqueda de texto completo instantánea, fragmentos resaltados, operadores.",
-        "i2": "Paleta de comandos {keys}: notas y acciones.",
-        "i3": "Todo con el teclado: {keys}."
+        "i1": "Búsqueda de texto completo instantánea (SQLite FTS5), fragmentos resaltados, operadores.",
+        "i2": "Paleta de comandos {keys}: ir a una nota, crear desde una plantilla, exportar, abrir el historial…",
+        "i3": "Todo con el teclado: {n} nueva nota, {f} buscar, {p} fijar, {d} eliminar."
       }
     },
     "files": {
       "eyebrow": "Privacidad",
       "title": "Tus archivos, no nuestra nube.",
-      "body": "Tus notas viven en una base SQLite local, con una copia Markdown con front matter YAML. Texto que cualquier editor puede abrir.",
-      "i1": "Copia Markdown en {path}, carpeta configurable.",
-      "i2": "Compatible con Obsidian y VS Code.",
-      "i3": "Sincronización bidireccional opcional con esa carpeta.",
-      "i4": "Importación de una carpeta Markdown existente.",
-      "i5": "Exportación PDF nativa.",
+      "body": "Cada nota se copia en un archivo .md con front matter YAML. La base SQLite sigue siendo la fuente de verdad; la carpeta se abre con cualquier editor.",
+      "i1": "Espejo Markdown en {path}, carpeta configurable, reconstruido al iniciar si se movió o eliminó.",
+      "i2": "Sintaxis compatible con Obsidian, legible en VS Code o cualquier editor de texto.",
+      "i3": "Sincronización bidireccional opcional: un archivo modificado fuera de PandaKeep se vuelve a importar.",
+      "i4": "Importación de una carpeta Markdown existente, front matter incluido.",
+      "i5": "Exportación PDF nativa, sin cuadro de impresión.",
       "fileLabel": "Una nota de ejemplo, tal como se escribe en el disco",
       "fm": {
         "title": "Ideas de proyecto",
@@ -127,28 +127,28 @@
       "eyebrow": "Seguridad y fiabilidad",
       "title": "Lo que debe ser privado, lo es.",
       "encTitle": "Cifrado nota por nota",
-      "encBody": "Argon2 y AES-GCM, desbloqueados con una frase secreta. La clave nunca se escribe en el disco.",
+      "encBody": "Una caja fuerte protegida por frase secreta: clave derivada con Argon2, contenido cifrado con AES-GCM. La clave se queda en memoria, nunca en el disco.",
       "leakTitle": "Nada se filtra",
-      "leakBody": "Una nota cifrada nunca se copia en Markdown al disco, ni se envía a una IA.",
+      "leakBody": "Una nota cifrada no se exporta al espejo Markdown y nunca se envía a una IA.",
       "historyTitle": "Historial de versiones",
-      "historyBody": "Historial local de cada nota, con comparación (diff) y restauración.",
+      "historyBody": "Una instantánea en cada cambio guardado. Compara dos versiones, restaura la buena.",
       "warnTitle": "Conviene saberlo",
       "warnBody": "Sin la frase secreta, no hay recuperación posible."
     },
     "ai": {
       "eyebrow": "IA",
       "title": "IA, si la quieres.",
-      "lede": "Desactivada por defecto. Una vez activada, propone la continuación de tu texto en gris.",
+      "lede": "Desactivada por defecto. Una vez activada, sugiere la continuación de tu texto en gris, tras una breve pausa.",
       "demoLabel": "Ejemplo de autocompletado",
       "demoText": "Reunión el jueves: aprobar el presupuesto y ",
       "demoGhost": "fijar la fecha de lanzamiento.",
-      "hint": "{tab} acepta, {esc} descarta.",
+      "hint": "{tab} acepta, {esc} o cualquier tecla descarta.",
       "localTitle": "Local",
       "localBadge": "Nada sale de tu equipo",
-      "localBody": "Ollama con modelos ligeros ({models}), descargados desde la aplicación.",
+      "localBody": "Ollama, con uno de los dos modelos más rápidos ({models}). Descarga desde la aplicación, con ayuda para instalar Ollama.",
       "cloudTitle": "Nube",
-      "cloudBadge": "Tu propia clave",
-      "cloudBody": "Gemini, OpenAI o Mistral con tu propia clave API, guardada en el almacén de credenciales de Windows y nunca expuesta a la interfaz.",
+      "cloudBadge": "Opcional, tu propia clave",
+      "cloudBody": "Gemini, OpenAI o Mistral con tu clave API, probada y guardada en el Administrador de credenciales de Windows. Las llamadas salen del núcleo de la aplicación: la clave nunca llega a la interfaz. La única excepción, voluntaria, a lo totalmente local.",
       "escKey": "Esc"
     },
     "comfort": {
@@ -162,15 +162,15 @@
       "eyebrow": "FAQ",
       "title": "Preguntas frecuentes",
       "q1": "¿Hace falta una cuenta?",
-      "a1": "No. Pensly se instala y se usa sin registro.",
+      "a1": "No. PandaKeep se instala y se usa sin registro.",
       "q2": "¿Dónde están mis notas?",
-      "a2": "En una base SQLite local, con una copia Markdown en Documents/Pensly (carpeta configurable).",
-      "q3": "¿Pensly es gratis?",
-      "a3": "Sí. Pensly es de código abierto, con licencia MIT.",
+      "a2": "En una base SQLite en tu equipo, copiada en archivos Markdown en Documents/Pensly (carpeta configurable).",
+      "q3": "¿PandaKeep es gratis?",
+      "a3": "Sí. PandaKeep es de código abierto, con licencia MIT.",
       "q4": "¿Hay versión para macOS o Linux?",
-      "a4": "No. Por ahora Pensly solo está disponible para Windows.",
+      "a4": "No. Por ahora PandaKeep solo está disponible para Windows.",
       "q5": "¿La IA lee mis notas?",
-      "a5": "Solo si la activas. En modo local, nada sale de tu equipo. Las notas cifradas nunca se envían.",
+      "a5": "Solo si la activas. En local (Ollama), nada sale de tu equipo. En la nube, el texto necesario para la sugerencia se envía al proveedor elegido. Las notas cifradas nunca se envían.",
       "q6": "¿Y si olvido mi frase secreta?",
       "a6": "Las notas cifradas quedan irrecuperables. Ese es el principio: solo tú tienes la clave."
     },
@@ -179,11 +179,11 @@
       "body": "Gratis, código abierto, sin cuenta."
     },
     "diptych": {
-      "caption": "A la izquierda, la nota dentro de Pensly. A la derecha, el archivo que se escribe en tu disco, en el mismo instante.",
+      "caption": "A la izquierda, la nota dentro de PandaKeep. A la derecha, el archivo que se escribe en tu disco, en el mismo instante.",
       "appLabel": "En la aplicación",
       "fileLabel": "En tu disco",
       "path": "Documents/Pensly/ideas-recetas-14.md",
-      "windowTitle": "Pensly",
+      "windowTitle": "PandaKeep",
       "noteTitle": "Ideas de recetas",
       "tag1": "cocina",
       "tag2": "pruebas",
@@ -196,17 +196,17 @@
   },
   "download": {
     "meta": {
-      "title": "Descargar Pensly para Windows",
-      "description": "Instalador de Windows de 64 bits de Pensly, con qué hacer ante el aviso de SmartScreen y cómo verificar la firma."
+      "title": "Descargar PandaKeep para Windows",
+      "description": "Instalador de Windows de 64 bits de PandaKeep, con qué hacer ante el aviso de SmartScreen y cómo verificar la firma."
     },
-    "title": "Descargar Pensly",
+    "title": "Descargar PandaKeep",
     "lede": "Un instalador, sin cuenta, sin configuración previa. Aun así, lee la sección sobre el aviso de Windows: te ahorrará una sorpresa desagradable.",
     "cardTitle": "Última versión",
     "cardUnavailable": "Datos de la versión no disponibles en la construcción",
     "signature": "Archivo de firma (.sig)",
     "requirementsTitle": "Requisitos",
     "req1": "Windows 10 o Windows 11, arquitectura de 64 bits (x64).",
-    "req2": "Sin cuenta y sin conexión permanente: Pensly funciona sin internet.",
+    "req2": "Sin cuenta y sin conexión permanente: PandaKeep funciona sin internet.",
     "req3": "Una carpeta con permiso de escritura para tus notas: Documents/Pensly por defecto, modificable después.",
     "stepsTitle": "Instalación",
     "step1Title": "Descarga el instalador",
@@ -216,13 +216,13 @@
     "step3Title": "Pasa el aviso de Windows",
     "step3Body": "Windows mostrará una pantalla azul diciendo que ha protegido tu PC. La sección de abajo explica por qué y qué hacer.",
     "step4Title": "Escribe",
-    "step4Body": "Pensly se abre, crea la carpeta Documents/Pensly y te deja escribir. Ctrl+Shift+N funciona desde la primera nota.",
+    "step4Body": "PandaKeep se abre, crea la carpeta Documents/Pensly y te deja escribir. Ctrl+Shift+N funciona desde la primera nota.",
     "smartscreen": {
       "eyebrow": "Léelo antes de hacer clic",
       "title": "Windows mostrará un aviso. Es lo esperado.",
       "body": "Al ejecutar el instalador, Windows muestra una pantalla azul con el mensaje «Windows protegió su PC» y un botón «No ejecutar». No es una detección de virus: es SmartScreen señalando a un editor que todavía no conoce.",
       "whyTitle": "Por qué",
-      "whyBody": "Pensly no está firmado con un certificado Authenticode. Esos certificados cuestan varios cientos de euros al año y exigen una verificación de identidad de empresa. Mientras eso no cambie, Windows seguirá avisando, aunque el archivo esté perfectamente limpio.",
+      "whyBody": "PandaKeep no está firmado con un certificado Authenticode. Esos certificados cuestan varios cientos de euros al año y exigen una verificación de identidad de empresa. Mientras eso no cambie, Windows seguirá avisando, aunque el archivo esté perfectamente limpio.",
       "howTitle": "Qué hacer",
       "how1": "Haz clic en «Más información», en letra pequeña bajo el mensaje.",
       "how2": "Haz clic en «Ejecutar de todas formas».",
@@ -234,7 +234,7 @@
       "title": "Verificar de dónde viene el archivo",
       "body": "Cada versión publica un archivo .sig junto al instalador. Es la firma generada por la clave del actualizador de Tauri, la misma que autoriza las actualizaciones automáticas dentro de la aplicación.",
       "item1": "El instalador y su firma se publican juntos, en la página de la versión, en un repositorio público.",
-      "item2": "Si ya tienes Pensly instalado, el mecanismo de actualización comprueba esa firma antes de instalar nada: un binario alterado por el camino se rechaza.",
+      "item2": "Si ya tienes PandaKeep instalado, el mecanismo de actualización comprueba esa firma antes de instalar nada: un binario alterado por el camino se rechaza.",
       "item3": "El código tiene licencia MIT: nada impide leerlo, ni compilarlo por tu cuenta.",
       "honestyTitle": "Lo que no hace",
       "honestyBody": "El archivo .sig protege la cadena de actualización. No es una firma Authenticode y no hará desaparecer el aviso de SmartScreen. Son dos mecanismos sin relación entre sí."
@@ -244,7 +244,7 @@
   },
   "guide": {
     "meta": {
-      "title": "Guía de inicio — Pensly",
+      "title": "Guía de inicio — PandaKeep",
       "description": "Inicio rápido, lista completa de atajos, cómo funciona realmente la sincronización por archivos e importación desde Obsidian o Notion."
     },
     "title": "Guía",
@@ -263,7 +263,7 @@
     },
     "shortcuts": {
       "title": "Atajos",
-      "caption": "Atajos de teclado de Pensly",
+      "caption": "Atajos de teclado de PandaKeep",
       "colShortcut": "Atajo",
       "colAction": "Acción",
       "global": "Captura rápida, incluso fuera de la aplicación (configurable)",
@@ -273,27 +273,27 @@
       "pin": "Fijar o soltar",
       "bold": "Negrita",
       "italic": "Cursiva",
-      "note": "El atajo global es el único que funciona cuando Pensly no tiene el foco. También es el único que puedes redefinir."
+      "note": "El atajo global es el único que funciona cuando PandaKeep no tiene el foco. También es el único que puedes redefinir."
     },
     "files": {
       "title": "Cómo funciona la «sincronización»",
-      "body": "Pensly no sincroniza nada. Escribe. Son dos cosas distintas, y el matiz decide qué puedes esperar.",
-      "step1": "Escribes una nota en Pensly. Se guarda en una base SQLite local.",
-      "step2": "Acto seguido, Pensly escribe el archivo .md correspondiente en la carpeta de notas, con su front-matter YAML.",
+      "body": "PandaKeep no sincroniza nada. Escribe. Son dos cosas distintas, y el matiz decide qué puedes esperar.",
+      "step1": "Escribes una nota en PandaKeep. Se guarda en una base SQLite local.",
+      "step2": "Acto seguido, PandaKeep escribe el archivo .md correspondiente en la carpeta de notas, con su front-matter YAML.",
       "step3": "Si esa carpeta está cubierta por Google Drive, OneDrive, Dropbox o cualquier herramienta de sincronización, esa herramienta hace el resto, igual que con tus demás documentos.",
       "frontmatterTitle": "Qué aspecto tiene un archivo",
       "warnTitle": "Los límites, sin rodeos",
-      "warn1": "No hay fusión de conflictos. Dos equipos que editen la misma nota a la vez producirán un conflicto, arbitrado por tu herramienta de sincronización, no por Pensly.",
+      "warn1": "No hay fusión de conflictos. Dos equipos que editen la misma nota a la vez producirán un conflicto, arbitrado por tu herramienta de sincronización, no por PandaKeep.",
       "warn2": "La propagación no es inmediata: depende por completo de la rapidez de Drive o de OneDrive.",
-      "warn3": "Editar un archivo .md a mano, fuera de Pensly, no es un escenario contemplado."
+      "warn3": "Editar un archivo .md a mano, fuera de PandaKeep, no es un escenario contemplado."
     },
     "import": {
       "title": "Venir de Obsidian o de Notion",
-      "body": "Pensly importa una carpeta de archivos .md. Una bóveda de Obsidian ya está en ese formato; para Notion, exporta antes a Markdown.",
+      "body": "PandaKeep importa una carpeta de archivos .md. Una bóveda de Obsidian ya está en ese formato; para Notion, exporta antes a Markdown.",
       "obsidianTitle": "Desde Obsidian",
       "obsidianBody": "Elige la carpeta de la bóveda, o cualquier subcarpeta. El front-matter existente se lee y los archivos se toman tal cual.",
       "notionTitle": "Desde Notion",
-      "notionBody": "En Notion: Configuración, luego Exportar, en formato Markdown. Descomprime el archivo y apunta Pensly a la carpeta resultante.",
+      "notionBody": "En Notion: Configuración, luego Exportar, en formato Markdown. Descomprime el archivo y apunta PandaKeep a la carpeta resultante.",
       "exportTitle": "Y para marcharte",
       "exportBody": "Nada especial que hacer: la carpeta de notas ya es la exportación. Para una nota concreta, la exportación a PDF o a texto plano está en la aplicación."
     },
@@ -302,17 +302,17 @@
       "themeTitle": "Tema",
       "themeBody": "Claro u oscuro, a tu gusto, con independencia de Windows.",
       "langTitle": "Idioma",
-      "langBody": "Francés, inglés y español. En el primer arranque, Pensly sigue el idioma del sistema.",
+      "langBody": "Francés, inglés y español. En el primer arranque, PandaKeep sigue el idioma del sistema.",
       "folderTitle": "Carpeta de notas",
       "folderBody": "Documents/Pensly por defecto. Puedes moverla, por ejemplo a una carpeta ya sincronizada.",
       "updateTitle": "Actualizaciones",
-      "updateBody": "Pensly comprueba si hay versiones nuevas y las instala tras verificar su firma."
+      "updateBody": "PandaKeep comprueba si hay versiones nuevas y las instala tras verificar su firma."
     }
   },
   "changelog": {
     "meta": {
-      "title": "Novedades — Pensly",
-      "description": "Las notas de versión de Pensly, de la más reciente a la más antigua."
+      "title": "Novedades — PandaKeep",
+      "description": "Novedades de PandaKeep: nuevas funciones, correcciones y mejoras de cada actualización de la app de notas para Windows, de la más reciente a la más antigua."
     },
     "title": "Novedades",
     "lede": "Qué ha cambiado, versión a versión. La lista procede de las versiones publicadas en GitHub en el momento de construir este sitio.",
@@ -326,16 +326,16 @@
   },
   "privacy": {
     "meta": {
-      "title": "Privacidad — Pensly",
-      "description": "Lo que recogen Pensly y este sitio: nada. Dónde se guardan tus notas y cuáles son las únicas conexiones salientes."
+      "title": "Privacidad — PandaKeep",
+      "description": "Lo que recogen PandaKeep y este sitio: nada. Dónde se guardan tus notas y cuáles son las únicas conexiones salientes."
     },
     "title": "Privacidad",
-    "lede": "Versión corta: Pensly no recoge nada, y este sitio tampoco. El detalle cabe en una página.",
+    "lede": "Versión corta: PandaKeep no recoge nada, y este sitio tampoco. El detalle cabe en una página.",
     "appTitle": "La aplicación",
     "app1Title": "Sin cuenta",
     "app1Body": "No hay registro. Por tanto, ni correo electrónico, ni contraseña, ni perfil, ni base de usuarios.",
     "app2Title": "Sin servidor",
-    "app2Body": "Pensly no envía tus notas a ninguna parte. No existe ningún servicio en línea donde pudieran guardarse.",
+    "app2Body": "PandaKeep no envía tus notas a ninguna parte. No existe ningún servicio en línea donde pudieran guardarse.",
     "app3Title": "Sin telemetría",
     "app3Body": "Ni estadísticas de uso, ni informes de error automáticos, ni identificador de instalación.",
     "app4Title": "Una sola conexión saliente",
@@ -343,7 +343,7 @@
     "storageTitle": "Dónde están tus notas",
     "storage1": "Los archivos .md están en Documents/Pensly, o en la carpeta que hayas elegido.",
     "storage2": "La base SQLite que hace funcionar la aplicación se guarda en local, en el mismo equipo.",
-    "storage3": "Pensly no cifra nada: los archivos son texto plano, protegidos por tu sesión de Windows.",
+    "storage3": "PandaKeep no cifra nada: los archivos son texto plano, protegidos por tu sesión de Windows.",
     "siteTitle": "Este sitio",
     "site1Title": "Sin rastreadores",
     "site1Body": "Ninguna herramienta de analítica, ninguna cookie publicitaria, ningún script de terceros. Las páginas son estáticas y no vuelven a llamar a ningún servidor una vez cargadas.",
@@ -357,7 +357,7 @@
   },
   "notFound": {
     "meta": {
-      "title": "Página no encontrada — Pensly",
+      "title": "Página no encontrada — PandaKeep",
       "description": "Esta página no existe."
     },
     "code": "404",

@@ -1,6 +1,6 @@
 {
   "brand": {
-    "name": "Pensly",
+    "name": "PandaKeep",
     "tagline": "Notes rapides, esprit léger."
   },
   "nav": {
@@ -30,7 +30,7 @@
   "common": {
     "downloadShort": "Télécharger",
     "downloadWindows": "Télécharger pour Windows",
-    "downloadVersion": "Télécharger Pensly {version}",
+    "downloadVersion": "Télécharger PandaKeep {version}",
     "downloadPage": "Voir la page de téléchargement",
     "readGuide": "Lire le guide",
     "seeChangelog": "Voir le journal des versions",
@@ -44,7 +44,7 @@
     "unknown": "indisponible",
     "newTab": "(nouvel onglet)",
     "fallbackNotice": "Les informations de version n'ont pas pu être récupérées au moment de la construction du site. Le bouton ci-dessus mène à la page officielle des versions, où l'installeur le plus récent est toujours disponible.",
-    "platformNotice": "Vous semblez être sur {platform}. Pensly n'existe aujourd'hui qu'en version Windows 64 bits — le téléchargement ci-dessus ne fonctionnera pas chez vous.",
+    "platformNotice": "Vous semblez être sur {platform}. PandaKeep n'existe aujourd'hui qu'en version Windows 64 bits — le téléchargement ci-dessus ne fonctionnera pas chez vous.",
     "platformNoticeLink": "Suivre la question du support macOS et Linux",
     "platformMac": "macOS",
     "platformLinux": "Linux"
@@ -61,13 +61,13 @@
   },
   "home": {
     "meta": {
-      "title": "Pensly — notes rapides, esprit léger",
-      "description": "Application de notes 100 % locale pour Windows. Aucun compte, aucun serveur, aucune télémétrie : vos notes restent des fichiers Markdown lisibles sur votre disque."
+      "title": "PandaKeep — application de notes locale pour Windows",
+      "description": "Application de notes 100 % locale pour Windows : aucun compte, aucun serveur, aucune télémétrie. Vos notes restent sur votre PC, en Markdown lisible."
     },
     "hero": {
-      "lede": "100 % local. Aucun compte, aucun serveur, aucune télémétrie. Vos notes restent des fichiers Markdown lisibles sur votre disque.",
+      "lede": "Application de notes desktop, 100 % locale. Aucun compte, aucun serveur, aucune télémétrie : vos notes vivent sur votre machine et sont recopiées en fichiers Markdown lisibles dans Documents/Pensly.",
       "meta": "Gratuit · Open source · Windows 10/11 x64",
-      "shotAlt": "Fenêtre de Pensly : liste des notes à gauche, éditeur Markdown à droite."
+      "shotAlt": "Fenêtre de PandaKeep : liste des notes à gauche, éditeur Markdown à droite."
     },
     "proofs": {
       "label": "En bref",
@@ -81,39 +81,39 @@
       "title": "Écrire, capturer, relier, retrouver.",
       "write": {
         "title": "Écrire",
-        "i1": "Éditeur Markdown (CodeMirror 6) avec barre d'outils et aperçu.",
-        "i2": "Enregistrement automatique pendant la frappe, épinglage des notes.",
-        "i3": "Modèles de note avec variables {vars}.",
-        "i4": "Tâches {task} cliquables, et vue globale des tâches ouvertes."
+        "i1": "Éditeur Markdown (CodeMirror 6) avec barre d'outils et aperçu rendu.",
+        "i2": "Enregistrement automatique pendant la frappe, épinglage des notes importantes.",
+        "i3": "Modèles de note, avec variables {vars} remplies à la création.",
+        "i4": "Cases {task} cliquables dans l'aperçu, et une vue qui rassemble les tâches ouvertes de toutes les notes."
       },
       "capture": {
         "title": "Capturer vite",
-        "i1": "Capture rapide par raccourci global {keys} (configurable), fenêtre toujours au premier plan.",
-        "i2": "Note du jour : chaque capture s'y ajoute en puce horodatée.",
-        "i3": "Résidente dans la barre système, toujours prête."
+        "i1": "Mini-fenêtre toujours au premier plan, ouverte par le raccourci global {keys} (configurable), depuis n'importe quelle application.",
+        "i2": "Par défaut, chaque capture s'ajoute en puce horodatée à la note du jour. Ou devient une nouvelle note, au choix.",
+        "i3": "Résidente dans la zone de notification : fermer la fenêtre la masque, PandaKeep reste prêt."
       },
       "organize": {
         "title": "Organiser et relier",
-        "i1": "Liens {link} avec autocomplétion, et backlinks.",
-        "i2": "Tags avec suggestions et filtrage.",
-        "i3": "Dossiers et carnets en arborescence."
+        "i1": "Liens {link} avec autocomplétion des titres, et barre de backlinks sous l'éditeur.",
+        "i2": "Tags avec suggestions, filtrage en un clic depuis la barre latérale.",
+        "i3": "Dossiers et carnets en arborescence, reproduits en sous-dossiers sur le disque."
       },
       "find": {
         "title": "Retrouver",
-        "i1": "Recherche plein texte instantanée, extraits surlignés, opérateurs.",
-        "i2": "Palette de commandes {keys} : notes et actions.",
-        "i3": "Tout au clavier : {keys}."
+        "i1": "Recherche plein texte instantanée (SQLite FTS5), extraits surlignés, opérateurs.",
+        "i2": "Palette de commandes {keys} : aller à une note, créer depuis un modèle, exporter, ouvrir l'historique…",
+        "i3": "Tout au clavier : {n} nouvelle note, {f} rechercher, {p} épingler, {d} supprimer."
       }
     },
     "files": {
       "eyebrow": "Confidentialité",
       "title": "Vos fichiers, pas notre cloud.",
-      "body": "Vos notes vivent dans une base SQLite locale, doublée d'une copie Markdown avec front-matter YAML. Du texte, que n'importe quel éditeur sait ouvrir.",
-      "i1": "Copie Markdown dans {path}, dossier configurable.",
-      "i2": "Compatible Obsidian et VS Code.",
-      "i3": "Synchronisation bidirectionnelle optionnelle avec ce dossier.",
-      "i4": "Import d'un dossier Markdown existant.",
-      "i5": "Export PDF natif.",
+      "body": "Chaque note est recopiée en fichier .md avec front-matter YAML. La base SQLite reste la source de vérité ; le dossier, lui, s'ouvre avec n'importe quel éditeur.",
+      "i1": "Miroir Markdown dans {path}, dossier configurable, reconstruit au lancement s'il a été déplacé ou supprimé.",
+      "i2": "Syntaxe compatible Obsidian, lisible dans VS Code ou tout éditeur de texte.",
+      "i3": "Synchronisation bidirectionnelle optionnelle : un fichier modifié hors de PandaKeep est réimporté.",
+      "i4": "Import d'un dossier Markdown existant, front-matter compris.",
+      "i5": "Export PDF natif, sans boîte d'impression.",
       "fileLabel": "Exemple de note, telle qu'elle est écrite sur le disque",
       "fm": {
         "title": "Idées projet",
@@ -127,28 +127,28 @@
       "eyebrow": "Sécurité et fiabilité",
       "title": "Ce qui doit rester privé le reste.",
       "encTitle": "Chiffrement note par note",
-      "encBody": "Argon2 et AES-GCM, déverrouillés par une phrase secrète. La clé n'est jamais écrite sur le disque.",
+      "encBody": "Coffre protégé par une phrase secrète : clé dérivée par Argon2, contenu chiffré en AES-GCM. La clé reste en mémoire, jamais sur le disque.",
       "leakTitle": "Rien ne fuit",
-      "leakBody": "Une note chiffrée n'est jamais copiée en Markdown sur le disque, ni envoyée à une IA.",
+      "leakBody": "Une note chiffrée n'est pas exportée dans le miroir Markdown, et n'est jamais envoyée à une IA.",
       "historyTitle": "Historique de versions",
-      "historyBody": "Historique local de chaque note, avec comparaison (diff) et restauration.",
+      "historyBody": "Un instantané à chaque modification enregistrée. Comparez deux versions, restaurez la bonne.",
       "warnTitle": "À savoir",
       "warnBody": "Sans la phrase secrète, aucune récupération n'est possible."
     },
     "ai": {
       "eyebrow": "IA",
       "title": "IA, si vous le voulez.",
-      "lede": "Désactivée par défaut. Une fois activée, elle propose la suite de votre texte en gris.",
+      "lede": "Désactivée par défaut. Une fois activée, elle suggère la suite de votre texte en gris, après une courte pause.",
       "demoLabel": "Exemple d'autocomplétion",
       "demoText": "Réunion jeudi : valider le budget et ",
       "demoGhost": "fixer la date de lancement.",
-      "hint": "{tab} accepte, {esc} ignore.",
+      "hint": "{tab} accepte, {esc} ou toute frappe ignore.",
       "localTitle": "Locale",
       "localBadge": "Rien ne sort de la machine",
-      "localBody": "Ollama et des modèles légers ({models}), téléchargés depuis l'application.",
+      "localBody": "Ollama, avec l'un des deux modèles les plus rapides ({models}). Téléchargement depuis l'application, aide à l'installation d'Ollama incluse.",
       "cloudTitle": "Cloud",
-      "cloudBadge": "Votre propre clé",
-      "cloudBody": "Gemini, OpenAI ou Mistral avec votre propre clé API, stockée dans le trousseau Windows et jamais exposée à l'interface.",
+      "cloudBadge": "Opt-in, votre propre clé",
+      "cloudBody": "Gemini, OpenAI ou Mistral avec votre clé API, testée puis stockée dans le gestionnaire d'identifiants Windows. Les appels partent du cœur de l'application : la clé n'atteint jamais l'interface. Seule exception, volontaire, au tout-local.",
       "escKey": "Échap"
     },
     "comfort": {
@@ -162,15 +162,15 @@
       "eyebrow": "FAQ",
       "title": "Questions fréquentes",
       "q1": "Faut-il un compte ?",
-      "a1": "Non. Pensly s'installe et s'utilise sans inscription.",
+      "a1": "Non. PandaKeep s'installe et s'utilise sans inscription.",
       "q2": "Où sont mes notes ?",
-      "a2": "Dans une base SQLite locale, avec une copie Markdown dans Documents/Pensly (dossier configurable).",
-      "q3": "Pensly est-il gratuit ?",
-      "a3": "Oui. Pensly est open source, sous licence MIT.",
+      "a2": "Dans une base SQLite sur votre machine, recopiée en fichiers Markdown dans Documents/Pensly (dossier configurable).",
+      "q3": "PandaKeep est-il gratuit ?",
+      "a3": "Oui. PandaKeep est open source, sous licence MIT.",
       "q4": "Existe-t-il une version macOS ou Linux ?",
-      "a4": "Non. Pensly est disponible sur Windows uniquement pour l'instant.",
+      "a4": "Non. PandaKeep est disponible sur Windows uniquement pour l'instant.",
       "q5": "L'IA lit-elle mes notes ?",
-      "a5": "Seulement si vous l'activez. En mode local, rien ne sort de votre machine. Les notes chiffrées ne sont jamais envoyées.",
+      "a5": "Seulement si vous l'activez. En local (Ollama), rien ne sort de votre machine. En cloud, le texte nécessaire à la suggestion est envoyé au fournisseur choisi. Les notes chiffrées ne sont jamais envoyées.",
       "q6": "Et si j'oublie ma phrase secrète ?",
       "a6": "Les notes chiffrées deviennent irrécupérables. C'est le principe : vous seul détenez la clé."
     },
@@ -179,11 +179,11 @@
       "body": "Gratuit, open source, sans compte."
     },
     "diptych": {
-      "caption": "À gauche, la note dans Pensly. À droite, le fichier réellement écrit sur votre disque, au même instant.",
+      "caption": "À gauche, la note dans PandaKeep. À droite, le fichier réellement écrit sur votre disque, au même instant.",
       "appLabel": "Dans l'application",
       "fileLabel": "Sur votre disque",
       "path": "Documents/Pensly/idees-recette-14.md",
-      "windowTitle": "Pensly",
+      "windowTitle": "PandaKeep",
       "noteTitle": "Idées recette",
       "tag1": "cuisine",
       "tag2": "essais",
@@ -196,17 +196,17 @@
   },
   "download": {
     "meta": {
-      "title": "Télécharger Pensly pour Windows",
-      "description": "Installeur Windows 64 bits de Pensly, avec la marche à suivre face à l'avertissement SmartScreen et la vérification de signature."
+      "title": "Télécharger PandaKeep pour Windows",
+      "description": "Installeur Windows 64 bits de PandaKeep, avec la marche à suivre face à l'avertissement SmartScreen et la vérification de signature."
     },
-    "title": "Télécharger Pensly",
+    "title": "Télécharger PandaKeep",
     "lede": "Un installeur, aucun compte, aucune configuration préalable. Lisez quand même la section sur l'avertissement Windows : elle vous évitera une mauvaise surprise.",
     "cardTitle": "Dernière version",
     "cardUnavailable": "Version indisponible au moment du build",
     "signature": "Fichier de signature (.sig)",
     "requirementsTitle": "Prérequis",
     "req1": "Windows 10 ou Windows 11, architecture 64 bits (x64).",
-    "req2": "Aucun compte, aucune connexion permanente : Pensly fonctionne hors ligne.",
+    "req2": "Aucun compte, aucune connexion permanente : PandaKeep fonctionne hors ligne.",
     "req3": "Un dossier d'écriture pour vos notes — Documents/Pensly par défaut, modifiable ensuite.",
     "stepsTitle": "Installation",
     "step1Title": "Téléchargez l'installeur",
@@ -216,13 +216,13 @@
     "step3Title": "Passez l'avertissement Windows",
     "step3Body": "Windows affichera un écran bleu « Windows a protégé votre ordinateur ». La section ci-dessous explique pourquoi et quoi faire.",
     "step4Title": "Écrivez",
-    "step4Body": "Pensly s'ouvre, crée le dossier Documents/Pensly et vous laisse écrire. Ctrl+Shift+N fonctionne dès la première note.",
+    "step4Body": "PandaKeep s'ouvre, crée le dossier Documents/Pensly et vous laisse écrire. Ctrl+Shift+N fonctionne dès la première note.",
     "smartscreen": {
       "eyebrow": "À lire avant de cliquer",
       "title": "Windows va afficher un avertissement. C'est normal.",
       "body": "Au lancement de l'installeur, Windows affiche « Windows a protégé votre ordinateur » sur fond bleu, avec un bouton « Ne pas exécuter ». Ce n'est pas une détection de virus : c'est SmartScreen qui signale un éditeur qu'il ne connaît pas encore.",
       "whyTitle": "Pourquoi",
-      "whyBody": "Pensly n'est pas signé avec un certificat Authenticode. Ces certificats coûtent plusieurs centaines d'euros par an et supposent une vérification d'identité d'entreprise. Tant que ce n'est pas le cas, Windows continuera d'avertir — même si le fichier est parfaitement sain.",
+      "whyBody": "PandaKeep n'est pas signé avec un certificat Authenticode. Ces certificats coûtent plusieurs centaines d'euros par an et supposent une vérification d'identité d'entreprise. Tant que ce n'est pas le cas, Windows continuera d'avertir — même si le fichier est parfaitement sain.",
       "howTitle": "Marche à suivre",
       "how1": "Cliquez sur « Informations complémentaires », en petit sous le message.",
       "how2": "Cliquez sur « Exécuter quand même ».",
@@ -234,7 +234,7 @@
       "title": "Vérifier la provenance du fichier",
       "body": "Chaque version publie, à côté de l'installeur, un fichier .sig. C'est la signature produite par la clé de l'updater Tauri, celle-là même qui autorise les mises à jour automatiques dans l'application.",
       "item1": "L'installeur et sa signature sont publiés ensemble, sur la page de la version, dans un dépôt public.",
-      "item2": "Si Pensly est déjà installé, le mécanisme de mise à jour vérifie cette signature avant d'installer quoi que ce soit : un binaire modifié en route est rejeté.",
+      "item2": "Si PandaKeep est déjà installé, le mécanisme de mise à jour vérifie cette signature avant d'installer quoi que ce soit : un binaire modifié en route est rejeté.",
       "item3": "Le code est sous licence MIT : rien n'empêche de le lire, ni de le compiler soi-même.",
       "honestyTitle": "Ce que cela ne fait pas",
       "honestyBody": "Le fichier .sig protège la chaîne de mise à jour. Ce n'est pas une signature Authenticode et il ne fera pas disparaître l'avertissement SmartScreen. Les deux mécanismes n'ont rien à voir."
@@ -244,7 +244,7 @@
   },
   "guide": {
     "meta": {
-      "title": "Guide de démarrage — Pensly",
+      "title": "Guide de démarrage — PandaKeep",
       "description": "Démarrage rapide, liste complète des raccourcis, fonctionnement de la synchronisation par fichiers et import depuis Obsidian ou Notion."
     },
     "title": "Guide",
@@ -263,7 +263,7 @@
     },
     "shortcuts": {
       "title": "Raccourcis",
-      "caption": "Raccourcis clavier de Pensly",
+      "caption": "Raccourcis clavier de PandaKeep",
       "colShortcut": "Raccourci",
       "colAction": "Action",
       "global": "Capture rapide, même hors de l'application (configurable)",
@@ -273,27 +273,27 @@
       "pin": "Épingler ou détacher",
       "bold": "Gras",
       "italic": "Italique",
-      "note": "Le raccourci global est le seul à fonctionner quand Pensly n'a pas le focus. C'est aussi le seul que vous pouvez redéfinir."
+      "note": "Le raccourci global est le seul à fonctionner quand PandaKeep n'a pas le focus. C'est aussi le seul que vous pouvez redéfinir."
     },
     "files": {
       "title": "Comment marche la « synchro »",
-      "body": "Pensly ne synchronise rien. Il écrit. Ce sont deux choses différentes, et la nuance décide de ce à quoi vous pouvez vous attendre.",
-      "step1": "Vous écrivez une note dans Pensly. Elle est enregistrée dans une base SQLite locale.",
-      "step2": "Dans la foulée, Pensly écrit le fichier .md correspondant dans le dossier de notes, avec son front-matter YAML.",
+      "body": "PandaKeep ne synchronise rien. Il écrit. Ce sont deux choses différentes, et la nuance décide de ce à quoi vous pouvez vous attendre.",
+      "step1": "Vous écrivez une note dans PandaKeep. Elle est enregistrée dans une base SQLite locale.",
+      "step2": "Dans la foulée, PandaKeep écrit le fichier .md correspondant dans le dossier de notes, avec son front-matter YAML.",
       "step3": "Si ce dossier est couvert par Google Drive, OneDrive, Dropbox ou n'importe quel outil de synchronisation, celui-ci s'occupe du reste — exactement comme pour vos autres documents.",
       "frontmatterTitle": "À quoi ressemble un fichier",
       "warnTitle": "Les limites, sans détour",
-      "warn1": "Il n'y a pas de fusion de conflits. Deux machines qui modifient la même note en même temps produiront un conflit, arbitré par votre outil de synchronisation, pas par Pensly.",
+      "warn1": "Il n'y a pas de fusion de conflits. Deux machines qui modifient la même note en même temps produiront un conflit, arbitré par votre outil de synchronisation, pas par PandaKeep.",
       "warn2": "La propagation n'est pas immédiate : elle dépend entièrement de la rapidité de Drive ou de OneDrive.",
-      "warn3": "Modifier un fichier .md à la main, en dehors de Pensly, n'est pas un scénario pris en charge."
+      "warn3": "Modifier un fichier .md à la main, en dehors de PandaKeep, n'est pas un scénario pris en charge."
     },
     "import": {
       "title": "Venir d'Obsidian ou de Notion",
-      "body": "Pensly importe un dossier de fichiers .md. Un coffre Obsidian est déjà dans ce format ; pour Notion, exportez au format Markdown avant.",
+      "body": "PandaKeep importe un dossier de fichiers .md. Un coffre Obsidian est déjà dans ce format ; pour Notion, exportez au format Markdown avant.",
       "obsidianTitle": "Depuis Obsidian",
       "obsidianBody": "Choisissez le dossier du coffre, ou n'importe quel sous-dossier. Le front-matter existant est lu, les fichiers sont repris tels quels.",
       "notionTitle": "Depuis Notion",
-      "notionBody": "Dans Notion : Paramètres, puis Exporter, au format Markdown. Décompressez l'archive, puis pointez Pensly sur le dossier obtenu.",
+      "notionBody": "Dans Notion : Paramètres, puis Exporter, au format Markdown. Décompressez l'archive, puis pointez PandaKeep sur le dossier obtenu.",
       "exportTitle": "Et pour repartir",
       "exportBody": "Aucune manipulation particulière : le dossier de notes est déjà l'export. Pour une note précise, l'export en PDF ou en texte brut est disponible depuis l'application."
     },
@@ -302,17 +302,17 @@
       "themeTitle": "Thème",
       "themeBody": "Clair ou sombre, au choix, indépendamment de Windows.",
       "langTitle": "Langue",
-      "langBody": "Français, anglais et espagnol. Au premier lancement, Pensly suit la langue du système.",
+      "langBody": "Français, anglais et espagnol. Au premier lancement, PandaKeep suit la langue du système.",
       "folderTitle": "Dossier de notes",
       "folderBody": "Documents/Pensly par défaut. Vous pouvez le déplacer, par exemple dans un dossier déjà synchronisé.",
       "updateTitle": "Mises à jour",
-      "updateBody": "Pensly vérifie les nouvelles versions et les installe après vérification de leur signature."
+      "updateBody": "PandaKeep vérifie les nouvelles versions et les installe après vérification de leur signature."
     }
   },
   "changelog": {
     "meta": {
-      "title": "Journal des versions — Pensly",
-      "description": "Les notes de version de Pensly, de la plus récente à la plus ancienne."
+      "title": "Journal des versions — PandaKeep",
+      "description": "Journal des versions de PandaKeep : nouveautés, corrections et améliorations de chaque mise à jour, de la plus récente à la plus ancienne."
     },
     "title": "Journal des versions",
     "lede": "Ce qui a changé, version par version. La liste est reprise des versions publiées sur GitHub au moment de la construction de ce site.",
@@ -326,16 +326,16 @@
   },
   "privacy": {
     "meta": {
-      "title": "Confidentialité — Pensly",
-      "description": "Ce que Pensly et ce site collectent : rien. Où sont stockées vos notes, et quelles sont les seules connexions sortantes."
+      "title": "Confidentialité — PandaKeep",
+      "description": "Ce que PandaKeep et ce site collectent : rien. Où sont stockées vos notes, et quelles sont les seules connexions sortantes."
     },
     "title": "Confidentialité",
-    "lede": "Version courte : Pensly ne collecte rien, et ce site non plus. Le détail tient en une page.",
+    "lede": "Version courte : PandaKeep ne collecte rien, et ce site non plus. Le détail tient en une page.",
     "appTitle": "L'application",
     "app1Title": "Aucun compte",
     "app1Body": "Il n'y a pas d'inscription. Donc pas d'adresse e-mail, pas de mot de passe, pas de profil, pas de base d'utilisateurs.",
     "app2Title": "Aucun serveur",
-    "app2Body": "Pensly n'envoie vos notes nulle part. Il n'existe aucun service en ligne où elles pourraient être stockées.",
+    "app2Body": "PandaKeep n'envoie vos notes nulle part. Il n'existe aucun service en ligne où elles pourraient être stockées.",
     "app3Title": "Aucune télémétrie",
     "app3Body": "Ni statistiques d'usage, ni rapports d'erreur automatiques, ni identifiant d'installation.",
     "app4Title": "Une seule connexion sortante",
@@ -343,7 +343,7 @@
     "storageTitle": "Où sont vos notes",
     "storage1": "Les fichiers .md sont dans Documents/Pensly, ou dans le dossier que vous avez choisi.",
     "storage2": "La base SQLite qui fait fonctionner l'application est stockée localement, sur la même machine.",
-    "storage3": "Rien n'est chiffré par Pensly : les fichiers sont du texte clair, protégés par votre session Windows.",
+    "storage3": "Rien n'est chiffré par PandaKeep : les fichiers sont du texte clair, protégés par votre session Windows.",
     "siteTitle": "Ce site",
     "site1Title": "Pas de traqueur",
     "site1Body": "Aucun outil de mesure d'audience, aucun cookie publicitaire, aucun script tiers. Les pages sont statiques et ne rappellent aucun serveur une fois chargées.",
@@ -357,7 +357,7 @@
   },
   "notFound": {
     "meta": {
-      "title": "Page introuvable — Pensly",
+      "title": "Page introuvable — PandaKeep",
       "description": "Cette page n'existe pas."
     },
     "code": "404",

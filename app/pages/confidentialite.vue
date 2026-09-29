@@ -17,7 +17,7 @@ useSeoMeta({
   ogDescription: () => t('privacy.meta.description'),
 })
 
-defineOgImageComponent('PenslyOg', {
+defineOgImageComponent('PandaKeepOg', {
   title: t('privacy.title'),
   description: t('privacy.lede'),
 })

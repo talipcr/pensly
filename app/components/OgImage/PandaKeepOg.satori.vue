@@ -8,7 +8,7 @@ withDefaults(defineProps<{
   title?: string
   description?: string
 }>(), {
-  title: 'Pensly',
+  title: 'PandaKeep',
   description: 'Notes rapides, esprit léger.',
 })
 </script>
@@ -18,8 +18,8 @@ withDefaults(defineProps<{
     style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:72px;background-color:#ffffff;"
   >
     <div style="display:flex;align-items:center;">
-      <img src="/pensly-logo.svg" style="width:56px;height:56px;" />
-      <span style="margin-left:14px;font-family:Inter;font-size:30px;font-weight:700;color:#18181b;">Pensly</span>
+      <img src="/pandakeep-logo.svg" style="width:56px;height:56px;" />
+      <span style="margin-left:14px;font-family:Inter;font-size:30px;font-weight:700;color:#18181b;">PandaKeep</span>
     </div>
 
     <div style="display:flex;flex-direction:column;">

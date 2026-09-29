@@ -3,7 +3,7 @@ import { consola } from 'consola'
 
 /**
  * Récupère AU BUILD la dernière release publiée de `talipcr/pensly-releases`
- * et l'expose à l'application via `#build/pensly-releases.mjs`.
+ * et l'expose à l'application via `#build/pandakeep-releases.mjs`.
  *
  * Rien n'est jamais codé en dur : l'URL de l'asset change à chaque version.
  * Si l'appel échoue (quota anonyme de l'API GitHub = 60 req/h, réseau coupé,
@@ -83,7 +83,7 @@ interface GhRelease {
 function headers() {
   const h: Record<string, string> = {
     accept: 'application/vnd.github+json',
-    'user-agent': 'pensly-site-build',
+    'user-agent': 'pandakeep-site-build',
   }
   // Optionnel : relève le quota de 60 à 5000 req/h sur la CI.
   const token = process.env.GITHUB_TOKEN
@@ -192,7 +192,7 @@ function renderMarkdown(md: string) {
 }
 
 export default defineNuxtModule({
-  meta: { name: 'pensly-github-release' },
+  meta: { name: 'pandakeep-github-release' },
 
   async setup(_options, nuxt) {
     let latest: LatestRelease = { ...emptyLatest }
@@ -220,17 +220,17 @@ export default defineNuxtModule({
 
       if (!latest.ok) {
         consola.warn(
-          `[pensly] Release ${latest.tag || '?'} trouvée, mais aucun asset ne correspond à `
+          `[pandakeep] Release ${latest.tag || '?'} trouvée, mais aucun asset ne correspond à `
           + `« Pensly_*_x64-setup.exe ». Repli sur ${FALLBACK_URL}.`,
         )
       }
       else {
-        consola.success(`[pensly] Release ${latest.tag} — ${latest.fileName} (${latest.size} o)`)
+        consola.success(`[pandakeep] Release ${latest.tag} — ${latest.fileName} (${latest.size} o)`)
       }
     }
     catch (error) {
       consola.warn(
-        `[pensly] API GitHub injoignable (${(error as Error).message}). `
+        `[pandakeep] API GitHub injoignable (${(error as Error).message}). `
         + `Le site est construit avec le repli : ${FALLBACK_URL}. `
         + 'Aucun bouton mort, mais la version affichée sera absente.',
       )
@@ -243,11 +243,11 @@ export default defineNuxtModule({
       '',
     ].join('\n')
 
-    addTemplate({ filename: 'pensly-releases.mjs', write: true, getContents: () => contents })
+    addTemplate({ filename: 'pandakeep-releases.mjs', write: true, getContents: () => contents })
 
     addTypeTemplate({
-      filename: 'types/pensly-releases.d.ts',
-      getContents: () => `declare module '#build/pensly-releases.mjs' {
+      filename: 'types/pandakeep-releases.d.ts',
+      getContents: () => `declare module '#build/pandakeep-releases.mjs' {
   export interface LatestRelease {
     ok: boolean
     direct: boolean
@@ -277,6 +277,6 @@ export default defineNuxtModule({
     })
 
     // Utilisé par le JSON-LD et la balise de version dans le pied de page.
-    nuxt.options.runtimeConfig.public.penslyVersion = latest.version
+    nuxt.options.runtimeConfig.public.pandakeepVersion = latest.version
   },
 })

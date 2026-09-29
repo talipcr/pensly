@@ -1,6 +1,6 @@
-# Site vitrine de Pensly
+# Site vitrine de PandaKeep
 
-Site statique de [Pensly](https://github.com/talipcr/pensly-releases) — application de notes
+Site statique de [PandaKeep](https://github.com/talipcr/pensly-releases) — application de notes
 locale pour Windows. Nuxt 4, prérendu, sans serveur ni analytics.
 
 ## Prérequis
@@ -52,7 +52,7 @@ npx serve .output/public
   en HTML par un rendu à balises allowlistées (le texte est échappé d'abord).
 
 Rien n'est codé en dur : l'URL de l'asset change à chaque version. Les données sont exposées à
-l'application via `#build/pensly-releases.mjs` ; aucune requête n'est faite depuis le navigateur.
+l'application via `#build/pandakeep-releases.mjs` ; aucune requête n'est faite depuis le navigateur.
 
 **Repli.** Si l'API ne répond pas (quota anonyme de 60 req/h, réseau coupé), le build affiche un
 avertissement puis continue : le bouton pointe alors vers
@@ -68,7 +68,7 @@ Sur une CI, définir `GITHUB_TOKEN` relève le quota à 5 000 req/h (facultatif)
 
 | Variable | Défaut | Rôle |
 |---|---|---|
-| `NUXT_PUBLIC_SITE_URL` | `https://pensly.app` | Domaine canonique — sert au sitemap, aux `hreflang`, aux URL d'images sociales. **À régler avant la première mise en ligne.** |
+| `NUXT_PUBLIC_SITE_URL` | `https://pandakeep.app` | Domaine canonique — sert au sitemap, aux `hreflang`, aux URL d'images sociales. **À régler avant la première mise en ligne.** |
 | `GITHUB_TOKEN` | — | Facultatif, relève le quota de l'API GitHub au build. |
 
 ## Déploiement (Cloudflare Pages)
@@ -84,7 +84,7 @@ Sur une CI, définir `GITHUB_TOKEN` relève le quota à 5 000 req/h (facultatif)
 
 ### Reconstruire à chaque nouvelle version
 
-Le site est figé au build : une nouvelle release de Pensly n'apparaît qu'après une nouvelle
+Le site est figé au build : une nouvelle release de PandaKeep n'apparaît qu'après une nouvelle
 construction. Créer un *Deploy hook* dans Cloudflare Pages, puis, dans le dépôt
 `talipcr/pensly-releases`, ajouter à la fin du workflow de release :
 
@@ -103,7 +103,7 @@ app/
   pages/          index · telecharger · guide · journal · confidentialite
 i18n/locales/     fr.json (référence) · en.json · es.json
 modules/          github-release.ts — récupération au build
-public/           pensly-logo.svg (logo, favicon) · screenshots/hero-{light,dark}.png (captures à remplacer)
+public/           pandakeep-logo.svg (logo, favicon) · screenshots/hero-{light,dark}.png (captures à remplacer)
 ```
 
 Les slugs sont traduits page par page via `defineI18nRoute` :

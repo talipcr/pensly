@@ -1,5 +1,5 @@
 {
-  "name": "Pensly — site vitrine",
+  "name": "PandaKeep — site vitrine",
 
   // Image de base générique : la feature Node ci-dessous installe la dernière
   // version 22.x au moment du build du conteneur. Éviter l'image

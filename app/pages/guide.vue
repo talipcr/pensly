@@ -17,7 +17,7 @@ useSeoMeta({
   ogDescription: () => t('guide.meta.description'),
 })
 
-defineOgImageComponent('PenslyOg', {
+defineOgImageComponent('PandaKeepOg', {
   title: t('guide.title'),
   description: t('guide.lede'),
 })
